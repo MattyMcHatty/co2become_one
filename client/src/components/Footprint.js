@@ -27,6 +27,7 @@ const Footprint = ({footprint}) => {
         break;
         case '7' : household_score = 2
         break;
+        default:
     }
 
     switch(footprint.house_size){
@@ -38,6 +39,7 @@ const Footprint = ({footprint}) => {
         break;
         case 'Large' : house_size_score = 10
         break; 
+        default:
     }
     switch(footprint.food){
         case 'Meat Daily' : food_score = 10
@@ -48,6 +50,7 @@ const Footprint = ({footprint}) => {
         break;
         case 'Vegan' : food_score = 2
         break; 
+        default:
     }
     switch(footprint.water){
         case '1' : water_score = 1
@@ -56,6 +59,7 @@ const Footprint = ({footprint}) => {
         break;
         case '3' : water_score = 3
         break;
+        default:
     }
     switch(footprint.purchases){
         case '1' : purchases_score = 2
@@ -68,6 +72,7 @@ const Footprint = ({footprint}) => {
         break; 
         case '5' : purchases_score = 10
         break;
+        default:
     }
     switch(footprint.waste){
         case '1' : waste_score = 5
@@ -80,6 +85,7 @@ const Footprint = ({footprint}) => {
         break; 
         case '5' : waste_score = 50
         break;
+        default:
     }
     switch(footprint.transport){
         case '1' : transport_score = 0
@@ -90,11 +96,13 @@ const Footprint = ({footprint}) => {
         break;
         case '4' : transport_score = 10
         break; 
+        default:
     }switch(footprint.recycle){
         case false : recycle_score = 24
         break;
         case true : recycle_score = 0
         break;
+        default:
     }
 
     const final_score = household_score + house_size_score + food_score + water_score + purchases_score + waste_score + purchases_score + waste_score + transport_score + recycle_score;
