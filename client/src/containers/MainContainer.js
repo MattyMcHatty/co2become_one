@@ -5,6 +5,8 @@ import HomePage from '../components/HomePage';
 import Impact from '../components/Impact';
 import UserComparisons from '../components/UserComparisons';
 import HintsPage from '../components/HintsPage';
+import ErrorPage from '../components/ErrorPage';
+
 
 
 const MainContainer = () => {
@@ -21,6 +23,7 @@ const MainContainer = () => {
                         <Route exact path="/impact" element={<Impact />} />
                         <Route exact path="/usercomparisons" element={<UserComparisons />} />
                         <Route exact path="/hints" element={<HintsPage />} />
+                        <Route path="*" element={<ErrorPage />} />
                     </Routes>
 
 
