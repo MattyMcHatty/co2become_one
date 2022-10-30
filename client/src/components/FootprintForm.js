@@ -115,7 +115,7 @@ const FootprintForm = ({addFootprint}) => {
             <div className="form-wrap">
                 <label htmlFor="transport">What is your primary mode of transport?: </label>
                 <select onChange={onChange} id="transport" name="transport" value={formData.transport} required>
-                    <option value="" selected >Please Select</option>
+                    <option value="" default >Please Select</option>
                     <option value="1">Bike or Walk</option>
                     <option value="2">Train</option>
                     <option value="3">Bus</option>
