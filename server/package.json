@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server:dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seeds": "mongosh < ./db/seeds.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^3.5.7",
+    "react-router-dom": "^6.4.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^12.1.5",
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.20"
+  }
+}
