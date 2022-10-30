@@ -39,8 +39,18 @@ const Footprint = ({footprint}) => {
         case 'Large' : house_size_score = 10
         break; 
     }
+    switch(footprint.food){
+        case 'Meat Daily' : food_score = 10
+        break;
+        case 'Meat Sometimes' : food_score = 8
+        break;
+        case 'Vegetarian' : food_score = 4
+        break;
+        case 'Vegan' : food_score = 2
+        break; 
+    }
 
-    const final_score = household_score + house_size_score;
+    const final_score = household_score + house_size_score + food_score;
     return final_score;
 }
 
