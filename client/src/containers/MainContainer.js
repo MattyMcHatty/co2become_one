@@ -18,6 +18,11 @@ const MainContainer = () => {
         getFootprints().then((allFootprints) => {setFootprints(allFootprints)});
     }, [])
 
+    const addFootprint = (footprint) => {
+        const temp = footprints.map(s => s);
+        temp.push(footprint);
+        setFootprints(temp);
+    }
 
 
 
@@ -28,7 +33,7 @@ const MainContainer = () => {
                 <NavBar />
                     <Routes>
                         <Route exact path="/" element={<HomePage />} />
-                        <Route exact path="/impact" element={<Impact footprints={footprints}/>} />
+                        <Route exact path="/impact" element={<Impact footprints={footprints} addFootprint={addFootprint}/>} />
                         <Route exact path="/usercomparisons" element={<UserComparisons footprints={footprints} />} />
                         <Route exact path="/hints" element={<HintsPage />} />
                         <Route path="*" element={<ErrorPage />} />

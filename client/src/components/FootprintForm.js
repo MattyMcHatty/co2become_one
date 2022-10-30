@@ -24,9 +24,8 @@ const FootprintForm = ({addFootprint}) => {
 
     const onSubmit = (e) =>{
         e.preventDefault();
-        postFootprint(formData).then((data)=>{
-            addFootprint(data);
-        })
+        postFootprint(formData)
+        .then((data)=>{addFootprint(data);})
         // Reset the form input values
         setFormData({
         username: "",
@@ -127,6 +126,13 @@ const FootprintForm = ({addFootprint}) => {
                 <label htmFor="recycle">Do you recycle?: </label>
                 <input type="checkbox" id="recycle" name="recycle" onClick={formData.recycle = true}></input>
             </div> */}
+            <div className="form-wrap">
+                <label htmFor="recycle">Do you recycle?: </label>
+                <select onChange={onChange} id="recycle" name="recycle" value={formData.recycle} required>
+                    <option value={true}>Yes</option>
+                    <option value={false}>No</option>
+                </select>
+            </div>
             <input type="submit" value="Calculate Footprint" id="save" />
         </form>
     )
