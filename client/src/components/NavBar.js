@@ -6,7 +6,8 @@ const NavContainer = styled.ul`
 background: azure;
 display: flex;
 justify-content: space-evenly;
-padding: 2em;`
+padding: 2em;
+list-style-type: none;`
 
 const NavLinks = styled.li`
 font-size:1.5em;

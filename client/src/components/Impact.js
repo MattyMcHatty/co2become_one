@@ -1,6 +1,8 @@
 import React from 'react'
 
-const Impact = () => {
+const Impact = ({footprints}) => {
+
+
     return (
         <div>Impact</div>
     )
