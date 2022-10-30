@@ -82,17 +82,22 @@ const Footprint = ({footprint}) => {
         break;
     }
     switch(footprint.transport){
-        case '1' : household_score = 0
+        case '1' : transport_score = 0
         break;
-        case '2' : household_score = 4
+        case '2' : transport_score = 4
         break;
-        case '3' : household_score = 6
+        case '3' : transport_score = 6
         break;
-        case '4' : household_score = 10
+        case '4' : transport_score = 10
         break; 
+    }switch(footprint.recycle){
+        case false : recycle_score = 24
+        break;
+        case true : recycle_score = 0
+        break;
     }
 
-    const final_score = household_score + house_size_score + food_score + water_score + purchases_score + waste_score;
+    const final_score = household_score + house_size_score + food_score + water_score + purchases_score + waste_score + purchases_score + waste_score + transport_score + recycle_score;
     return final_score;
 }
 
