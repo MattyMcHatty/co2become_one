@@ -5,7 +5,7 @@ export const getFootprints = () => {
         .then(res => res.json())
 }
 
-export const postFootprints = (payload) => {
+export const postFootprint = (payload) => {
     return fetch(baseURL, {
         method: 'POST',
         body: JSON.stringify(payload),
@@ -14,13 +14,13 @@ export const postFootprints = (payload) => {
     .then(res => res.json())
 }
 
-export const deleteFootprints = (id) => {
+export const deleteFootprint = (id) => {
     return fetch(baseURL + id, {
         method: 'DELETE'
     })
 }
 
-export const putFootprints = (payload) => {
+export const putFootprint = (payload) => {
     const id = payload[0]._id;
     const newPayload = {};
     // newPayload['checkedIn'] = payload[0].checkedIn;
