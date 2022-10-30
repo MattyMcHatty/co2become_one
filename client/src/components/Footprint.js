@@ -30,17 +30,17 @@ const Footprint = ({footprint}) => {
     }
 
     switch(footprint.house_size){
-        case '1' : household_score = 14
+        case 'Flat' : house_size_score = 2
         break;
-        case '2' : household_score = 12
+        case 'Small' : house_size_score = 4
         break;
-        case '3' : household_score = 10
+        case 'Medium' : house_size_score = 7
         break;
-        case '4' : household_score = 8
+        case 'Large' : house_size_score = 10
         break; 
     }
 
-    const final_score = household_score;
+    const final_score = household_score + house_size_score;
     return final_score;
 }
 
