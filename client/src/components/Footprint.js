@@ -15,6 +15,7 @@ const Footprint = ({footprint}) => {
         <div>Waste: {footprint.waste}</div>
         <div>Do You Recycle?: {footprint.recycle ? "Yes" : "No"}</div>
         <div>Transport: {footprint.transport}</div>
+        <div>Carbon Footprint Score: MAFFS</div>
         <br></br>
         </div>
         </>
