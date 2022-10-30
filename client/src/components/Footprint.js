@@ -69,24 +69,20 @@ const Footprint = ({footprint}) => {
         case '5' : purchases_score = 10
         break;
     }
-    switch(footprint.household){
-        case '1' : household_score = 14
+    switch(footprint.waste){
+        case '1' : waste_score = 5
         break;
-        case '2' : household_score = 12
+        case '2' : waste_score = 20
         break;
-        case '3' : household_score = 10
+        case '3' : waste_score = 30
         break;
-        case '4' : household_score = 8
+        case '4' : waste_score = 40
         break; 
-        case '5' : household_score = 6
-        break;
-        case '6' : household_score = 4
-        break;
-        case '7' : household_score = 2
+        case '5' : waste_score = 50
         break;
     }
 
-    const final_score = household_score + house_size_score + food_score + water_score + purchases_score;
+    const final_score = household_score + house_size_score + food_score + water_score + purchases_score + waste_score;
     return final_score;
 }
 
