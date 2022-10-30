@@ -1,8 +1,32 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavBar from '../components/NavBar'
+import HomePage from '../components/HomePage';
+import Impact from '../components/Impact';
+import UserComparisons from '../components/UserComparisons';
+import HintsPage from '../components/HintsPage';
+
 
 const MainContainer = () => {
+
+
+
     return (
-        <div>MainContainer</div>
+        
+        <main>
+            <Router>
+                <NavBar />
+                    <Routes>
+                        <Route exact path="/" element={<HomePage />} />
+                        <Route exact path="/impact" element={<Impact />} />
+                        <Route exact path="/usercomparisons" element={<UserComparisons />} />
+                        <Route exact path="/hints" element={<HintsPage />} />
+                    </Routes>
+
+
+                
+            </Router>
+        </main>
     )
 }
 

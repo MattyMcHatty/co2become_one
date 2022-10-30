@@ -1,9 +1,10 @@
 import './App.css';
+import MainContainer from './containers/MainContainer';
 
 function App() {
   return (
     <div className="App">
-        This is App
+        <MainContainer />
     </div>
   );
 }
