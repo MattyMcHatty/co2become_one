@@ -81,6 +81,16 @@ const Footprint = ({footprint}) => {
         case '5' : waste_score = 50
         break;
     }
+    switch(footprint.transport){
+        case '1' : household_score = 0
+        break;
+        case '2' : household_score = 4
+        break;
+        case '3' : household_score = 6
+        break;
+        case '4' : household_score = 10
+        break; 
+    }
 
     const final_score = household_score + house_size_score + food_score + water_score + purchases_score + waste_score;
     return final_score;
