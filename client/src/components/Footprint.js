@@ -49,8 +49,44 @@ const Footprint = ({footprint}) => {
         case 'Vegan' : food_score = 2
         break; 
     }
+    switch(footprint.water){
+        case '1' : water_score = 1
+        break;
+        case '2' : water_score = 2
+        break;
+        case '3' : water_score = 3
+        break;
+    }
+    switch(footprint.purchases){
+        case '1' : purchases_score = 2
+        break;
+        case '2' : purchases_score = 4
+        break;
+        case '3' : purchases_score = 6
+        break;
+        case '4' : purchases_score = 8
+        break; 
+        case '5' : purchases_score = 10
+        break;
+    }
+    switch(footprint.household){
+        case '1' : household_score = 14
+        break;
+        case '2' : household_score = 12
+        break;
+        case '3' : household_score = 10
+        break;
+        case '4' : household_score = 8
+        break; 
+        case '5' : household_score = 6
+        break;
+        case '6' : household_score = 4
+        break;
+        case '7' : household_score = 2
+        break;
+    }
 
-    const final_score = household_score + house_size_score + food_score;
+    const final_score = household_score + house_size_score + food_score + water_score + purchases_score;
     return final_score;
 }
 
