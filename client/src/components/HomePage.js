@@ -1,7 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
+const TeamList = styled.ul`
+list-style-type: none;
+display: flex;
+justify-content: space-around;
 
+`
 
 const HomePage = () => {
     return (
@@ -12,7 +17,7 @@ const HomePage = () => {
         </main>
         <footer>
             <h3>Our Team</h3>
-            <ul>
+            <TeamList>
                 <li>
                     Lucy Collins
                     <br></br>
@@ -28,7 +33,7 @@ const HomePage = () => {
                     <br></br>
                     <img src="https://ca.slack-edge.com/T0TN401HD-U03T0T3TNET-f3a9457c7e38-512" height="250px" width="250px"/>
                 </li>
-            </ul>
+            </TeamList>
 
         </footer>
         </>
