@@ -10,7 +10,7 @@ db.footprints.insertMany([
         water: "3",
         purchases: "2",
         waste: "1",
-        recycle: true,
+        recycle: "true",
         transport: "Bus"
     },
     {
@@ -21,7 +21,7 @@ db.footprints.insertMany([
         water: "5",
         purchases: "5",
         waste: "2",
-        recycle: false,
+        recycle: "false",
         transport: "Car"
     },
 

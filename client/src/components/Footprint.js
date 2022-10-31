@@ -98,9 +98,9 @@ const Footprint = ({footprint}) => {
         break; 
         default:
     }switch(footprint.recycle){
-        case false : recycle_score = 24
+        case "false" : recycle_score = 24
         break;
-        case true : recycle_score = 0
+        case "true" : recycle_score = 0
         break;
         default:
     }

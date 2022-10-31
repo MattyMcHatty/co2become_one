@@ -35,12 +35,10 @@ const FootprintForm = ({addFootprint}) => {
         water: "",
         purchases: "",
         waste: "",
-        recycle: false,
+        recycle: "",
         transport: ""
         });
     }
-
-
     return (
         <form onSubmit={onSubmit} id="footprint-form">
             <h2>Tell us about you</h2>
@@ -129,8 +127,8 @@ const FootprintForm = ({addFootprint}) => {
             <div className="form-wrap">
                 <label htmlFor="recycle">Do you recycle?: </label>
                 <select onChange={onChange} id="recycle" name="recycle" value={formData.recycle} required>
-                    <option value={true}>Yes</option>
-                    <option value={false}>No</option>
+                    <option value="true" >Yes</option>
+                    <option value="false" >No</option>
                 </select>
             </div>
             <input type="submit" value="Calculate Footprint" id="save" />
