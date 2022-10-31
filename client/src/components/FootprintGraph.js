@@ -5,7 +5,12 @@ import Footprint from './Footprint';
 
 
 
-const FootprintGraph = () => {
+
+const FootprintGraph = ({footprint, CalculateFinalScore}) => {
+
+    const calculations = CalculateFinalScore(footprint)
+    const footprint_score = calculations[0]
+    const individual_scores = calculations[1]
 
 const options = {
     chart: {
@@ -13,12 +18,12 @@ const options = {
     },
     title: {
         align: 'left',
-        text: 'Browser market shares. January, 2022'
+        text: footprint.username
     },
-    subtitle: {
-        align: 'left',
-        text: 'Click the columns to view versions. Source: <a href="http://statcounter.com" target="_blank">statcounter.com</a>'
-    },
+    // subtitle: {
+    //     align: 'left',
+    //     text: 'Click the columns to view versions. Source: <a href="http://statcounter.com" target="_blank">statcounter.com</a>'
+    // },
     accessibility: {
         announceNewData: {
             enabled: true
@@ -29,7 +34,7 @@ const options = {
     },
     yAxis: {
         title: {
-            text: 'Total percent market share'
+            text: 'Total Co2 Score'
         }
 
     },
@@ -41,7 +46,7 @@ const options = {
             borderWidth: 0,
             dataLabels: {
                 enabled: true,
-                format: '{point.y:.1f}%'
+                format: '{point.y:.1f}'
             }
         }
     },
@@ -57,40 +62,49 @@ const options = {
             colorByPoint: true,
             data: [
                 {
-                    name: "Chrome",
-                    y: 63.06,
+                    name: "HouseHold",
+                    y: individual_scores[0],
                     drilldown: "Chrome"
                 },
                 {
-                    name: "Safari",
-                    y: 19.84,
+                    name: "House Size",
+                    y: individual_scores[1],
                     drilldown: "Safari"
                 },
                 {
-                    name: "Firefox",
-                    y: 4.18,
+                    name: "Food",
+                    y: individual_scores[2],
                     drilldown: "Firefox"
                 },
                 {
-                    name: "Edge",
-                    y: 4.12,
-                    drilldown: "Edge"
+                    name: "Water",
+                    y: individual_scores[3],
+                    drilldown: 
+
                 },
                 {
-                    name: "Opera",
-                    y: 2.33,
+                    name: "Purchases",
+                    y: individual_scores[4],
                     drilldown: "Opera"
                 },
                 {
-                    name: "Internet Explorer",
-                    y: 0.45,
+                    name: "Waste",
+                    y: individual_scores[5],
                     drilldown: "Internet Explorer"
                 },
                 {
-                    name: "Other",
-                    y: 1.582,
+                    name: "Recycle",
+                    y: individual_scores[6],
                     drilldown: null
+                    
+                },
+                {
+                    name: "Transport",
+                    y: individual_scores[7],
+                    drilldown: null
+                    
                 }
+
             ]
         }
     ],

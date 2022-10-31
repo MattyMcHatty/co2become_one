@@ -8,7 +8,7 @@ const Impact = ({footprints, addFootprint}) => {
     return (
         <>
         <div><FootprintForm addFootprint={addFootprint}/></div>
-        <div><FootprintGraph /></div>
+        {/* <div><FootprintGraph CalculateFinalScore={CalculateFinalScore} footprint={footprint}/></div> */}
         </>
     )
 }
