@@ -9,30 +9,22 @@ const UserComparisons = ({footprints}) => {
     const footprintsList = footprints.map((footprint) => {
         return <Footprint footprint={footprint} key={footprint._id} />
     })
-
-
-    // const options = {
-    //     chart: {
-    //       type: 'spline'
-    //     },
-    //     title: {
-    //       text: 'My chart'
-    //     },
-    //     series: [
-    //       {
-    //         data: [1, 2, 1, 4, 3, 6]
-    //       }
-    //     ]
-    //   };
-    //   <div>
-    //   <HighchartsReact highcharts={Highcharts} options={options} />
-    // </div>
-
-
-
+    
+    const options = {
+        title: {
+          text: 'My stock chart'
+        },
+        series: [{
+          data: [1, 2, 3]
+        }]
+      }
+      
 
     return (
+        <>
         <div>{footprintsList}</div>
+        <HighchartsReact highcharts={Highcharts} options={options} />
+        </>
     )
 
 
