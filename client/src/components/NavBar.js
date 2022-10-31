@@ -33,6 +33,7 @@ const NavBar = () => {
         <NavLinks>
             <Link to="/hints">Hints</Link>
         </NavLinks>
+            
     </NavContainer>
     )
 }
