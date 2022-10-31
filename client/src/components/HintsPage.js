@@ -99,9 +99,9 @@ const HintsPage = () => {
 //         </div>
 
 //         <h3>Why it Matters</h3>
-//         <p> Offsetting your unavoidable CO2 emissions is a practical and immediate way to take ownership of your personal contribution to climate change. With COTAP, you’re addressing global economic inequality too. Offsetting also reveals both the need for cleaner energy sources and opportunities for reducing your carbon footprint.</p>
+//         <p> Offsetting your unavoidable CO2 emissions is a practical and immediate way to take ownership of your personal contribution to climate change. With COTAP, you’re addressing global economic inequality too. Offsetting also reveals both the need for cleaner energy sources and opportunities for reducing your carbon footprint.</p>
 //         <br></br>
-//         <p>Carbon offsetting should not be done in place of taking steps to reduce one’s carbon footprint. Carbon offsetting and carbon footprint reduction should be done in tandem. Measuring your carbon footprint not only reveals where you’re currently at, but also helps to identify areas for improvement and track your progress.
+//         <p>Carbon offsetting should not be done in place of taking steps to reduce one’s carbon footprint. Carbon offsetting and carbon footprint reduction should be done in tandem. Measuring your carbon footprint not only reveals where you’re currently at, but also helps to identify areas for improvement and track your progress.
 // Offsetting the amount which you are not able to avoid empowers you to take full responsibility for your carbon pollution, which is your contribution to climate change. In this context, COTAP offers a unique and meaningful solution in that we focus on certified forestry projects in least-developed regions that create life-changing income for the world’s poorest people.</p>
 
 // </div>
