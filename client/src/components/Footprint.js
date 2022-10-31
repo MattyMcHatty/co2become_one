@@ -1,4 +1,6 @@
 import React from 'react'
+import FootprintGraph from './FootprintGraph';
+
 
 const Footprint = ({footprint}) => {
 
@@ -125,6 +127,7 @@ const Footprint = ({footprint}) => {
         <div>Transport: {footprint.transport}</div>
         <div>Carbon Footprint Score: {footprint_score}</div>
         <br></br>
+        <FootprintGraph />
         </div>
         </>
     )
