@@ -1,8 +1,40 @@
-import React, { useState, useEffect } from 'react'
-import { postFootprint } from './FootprintsService'
+import React, { useState, useEffect} from 'react'
+import { postFootprint, putFootprint } from './FootprintsService'
+import { useParams } from 'react-router-dom'
 
 
-const FootprintForm = ({addFootprint}) => {
+
+const FootprintForm = ({addFootprint, footprints}) => {
+
+    // const {id} =  useParams()
+
+    // const footprint = footprints.filter(footprint => footprint._id === id);
+    // console.log(footprint)
+
+    // const calculate = (e)=>{ 
+    //     e.preventDefault()
+      
+    // }
+
+
+    // useEffect(() => {
+    //         if(id){
+    //             // console.log(footprint);
+    //             // console.log("here!");
+    //             setFormData({
+    //             _id: footprint[0]._id,
+    //             username: footprint[0].username,
+    //             household: footprint[0].household,
+    //             house_size: footprint[0].house_size,
+    //             food: footprint[0].food,
+    //             water: footprint[0].water,
+    //             purchases: footprint[0].purchases,
+    //             waste: footprint[0].waste,
+    //             recycle: footprint[0].recycle,
+    //             transport: footprint[0].transport,
+    //           })}
+    //  },[])
+
 
     const [formData, setFormData] = useState({
         username: "",
@@ -13,8 +45,9 @@ const FootprintForm = ({addFootprint}) => {
         purchases: "",
         waste: "",
         recycle: "",
-        transport: ""
+        transport: "",
     })
+
 
     const onChange = (e) => {
         const newFormData = Object.assign({}, formData);
@@ -24,6 +57,13 @@ const FootprintForm = ({addFootprint}) => {
 
     const onSubmit = (e) =>{
         e.preventDefault();
+
+        // if (id){
+        //     putFootprint(formData)
+        //     // .then((data)=>{putFootprint(data)})
+        //     console.log(formData)
+
+        // } else {
         postFootprint(formData)
         .then((data)=>{addFootprint(data);})
         // Reset the form input values
@@ -38,6 +78,8 @@ const FootprintForm = ({addFootprint}) => {
         recycle: "",
         transport: ""
         });
+        // }
+        
     }
     return (
         <form onSubmit={onSubmit} id="footprint-form">

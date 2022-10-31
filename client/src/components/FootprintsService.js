@@ -23,6 +23,7 @@ export const deleteFootprint = (id) => {
 export const putFootprint = (payload) => {
     const id = payload[0]._id;
     const newPayload = {};
+    // newPayload['_id'] = payload[0]._id;
     newPayload['username'] = payload[0].username;
     newPayload['household'] = payload[0].household;
     newPayload['house_size'] = payload[0].house_size;

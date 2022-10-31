@@ -1,6 +1,8 @@
 import React from 'react'
 import FootprintGraph from './FootprintGraph';
 import { deleteFootprint, putFootprint} from './FootprintsService';
+import UpdateFootprint from './UpdateFootprint';
+import { Link } from 'react-router-dom';
 
 
 const Footprint = ({footprint, deleteUser}) => {
@@ -118,12 +120,10 @@ const Footprint = ({footprint, deleteUser}) => {
     const footprint_score = calculations[0]
     const individual_scores = calculations[1]
 
-    const updateUser = () => {
-        return putFootprint(footprint)
-      
+    const handleClick = () => {
+        console.log("click");
+        return <Link to={`/updatefootprint/${footprint._id}`}/>
     }
-
-
     return (
         <>
         <div className="user-card">
@@ -139,7 +139,8 @@ const Footprint = ({footprint, deleteUser}) => {
         <div>Carbon Footprint Score: {footprint_score}</div>
         <br></br>
         <FootprintGraph CalculateFinalScore={CalculateFinalScore} footprint={footprint} />
-        <button type='input' value="update" onClick={updateUser}>Update User</button>
+        <Link to={`/updatefootprint/${footprint._id}`}>Update user</Link>
+        <button  onClick={handleClick}>Update User</button>
         <button  onClick={()=>deleteUser(footprint._id)}>Delete User 🗑</button>
         </div>
         </>
