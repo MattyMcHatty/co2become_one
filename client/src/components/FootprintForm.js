@@ -12,7 +12,7 @@ const FootprintForm = ({addFootprint}) => {
         water: "",
         purchases: "",
         waste: "",
-        recycle: false,
+        recycle: "",
         transport: ""
     })
 

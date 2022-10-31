@@ -1,8 +1,9 @@
 import React from 'react'
 import FootprintGraph from './FootprintGraph';
+import { deleteFootprint, putFootprint} from './FootprintsService';
 
 
-const Footprint = ({footprint}) => {
+const Footprint = ({footprint, deleteUser}) => {
 
     const CalculateFinalScore =(footprint) =>{
     let household_score = 0;
@@ -117,6 +118,12 @@ const Footprint = ({footprint}) => {
     const footprint_score = calculations[0]
     const individual_scores = calculations[1]
 
+    const updateUser = () => {
+        return putFootprint(footprint)
+      
+    }
+
+
     return (
         <>
         <div className="user-card">
@@ -132,9 +139,12 @@ const Footprint = ({footprint}) => {
         <div>Carbon Footprint Score: {footprint_score}</div>
         <br></br>
         <FootprintGraph CalculateFinalScore={CalculateFinalScore} footprint={footprint} />
+        <button type='input' value="update" onClick={updateUser}>Update User</button>
+        <button  onClick={()=>deleteUser(footprint._id)}>Delete User 🗑</button>
         </div>
         </>
     )
 }
+
 
 export default Footprint

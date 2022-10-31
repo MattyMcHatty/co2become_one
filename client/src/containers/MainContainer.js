@@ -6,7 +6,7 @@ import Impact from '../components/Impact';
 import UserComparisons from '../components/UserComparisons';
 import HintsPage from '../components/HintsPage';
 import ErrorPage from '../components/ErrorPage';
-import { getFootprints } from '../components/FootprintsService';
+import { deleteFootprint, getFootprints } from '../components/FootprintsService';
 
 
 
@@ -23,7 +23,14 @@ const MainContainer = () => {
         temp.push(footprint);
         setFootprints(temp);
     }
-
+    const deleteUser = (id) => {
+          deleteFootprint(id).then(()=>{
+          let temp = footprints.map(f=>f);
+          const toDel = footprints.map(f =>f._id).indexOf(id);
+          temp.splice(toDel, 1);
+          setFootprints(temp);
+        })
+    }
 
 
     return (
@@ -33,8 +40,8 @@ const MainContainer = () => {
                 <NavBar />
                     <Routes>
                         <Route exact path="/" element={<HomePage />} />
-                        <Route exact path="/impact" element={<Impact footprints={footprints} addFootprint={addFootprint}/>} />
-                        <Route exact path="/usercomparisons" element={<UserComparisons footprints={footprints} />} />
+                        <Route exact path="/impact" element={<Impact footprints={footprints} deleteUser={deleteUser} addFootprint={addFootprint}/>} />
+                        <Route exact path="/usercomparisons" element={<UserComparisons footprints={footprints} deleteUser={deleteUser} />} />
                         <Route exact path="/hints" element={<HintsPage />} />
                         <Route path="*" element={<ErrorPage />} />
                     </Routes>
