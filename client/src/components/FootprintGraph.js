@@ -79,7 +79,7 @@ const options = {
                 {
                     name: "Water",
                     y: individual_scores[3],
-                    drilldown: 
+                    drilldown: ""
 
                 },
                 {
