@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const NavContainer = styled.ul`
-background: azure;
+background: #b3ffb3;
 display: flex;
 justify-content: space-evenly;
 padding: 2em;
 list-style-type: none;`
 
 const NavLinks = styled.li`
-font-size:1.5em;
+font-size:1 rem;
 a:visited {color: red}
 a:hover {color: black}`
 
