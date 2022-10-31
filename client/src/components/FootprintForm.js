@@ -63,8 +63,8 @@ const CalculateButton = styled.input`
 	font-weight:bold;
 	padding:6px 12px;
 	text-decoration:none;
-
-    
+    width: 200px;
+    height: 50px;
 
 &:hover {
 	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
@@ -75,6 +75,13 @@ const CalculateButton = styled.input`
 	top:1px;
 }
 `
+
+const Title = styled.h2`
+    text-decoration: underline;
+    
+`
+
+
 const FootprintForm = ({addFootprint}) => {
 
     const [formData, setFormData] = useState({
@@ -114,7 +121,7 @@ const FootprintForm = ({addFootprint}) => {
     }
     return (
         <form onSubmit={onSubmit} id="footprint-form">
-            <h2>Tell us about you</h2>
+            <Title>Tell us about you</Title>
             <Question className="form-wrap">
                 <label htmlFor="username">Username: </label>
                 <Input onChange={onChange} type="text" id="username" name="username" value={formData.username} placeholder="Enter Username Here" required />
