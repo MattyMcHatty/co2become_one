@@ -1,4 +1,6 @@
 import React from 'react'
+import FootprintGraph from './FootprintGraph';
+
 
 const Footprint = ({footprint}) => {
 
@@ -106,10 +108,14 @@ const Footprint = ({footprint}) => {
     }
 
     const final_score = household_score + house_size_score + food_score + water_score + purchases_score + waste_score + purchases_score + waste_score + transport_score + recycle_score;
-    return final_score;
+    const individual_scores = [household_score, house_size_score, food_score, water_score, purchases_score, waste_score, purchases_score, waste_score, transport_score, recycle_score]
+    return [final_score, individual_scores]
+
 }
 
-    const footprint_score = CalculateFinalScore(footprint)
+    const calculations = CalculateFinalScore(footprint)
+    const footprint_score = calculations[0]
+    const individual_scores = calculations[1]
 
     return (
         <>
@@ -125,6 +131,7 @@ const Footprint = ({footprint}) => {
         <div>Transport: {footprint.transport}</div>
         <div>Carbon Footprint Score: {footprint_score}</div>
         <br></br>
+        <FootprintGraph CalculateFinalScore={CalculateFinalScore} footprint={footprint} />
         </div>
         </>
     )

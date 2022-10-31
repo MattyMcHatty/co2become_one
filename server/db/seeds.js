@@ -18,7 +18,7 @@ db.footprints.insertMany([
         household: "5",
         house_size: "Large",
         food: "Vegan",
-        water: "5",
+        water: "3",
         purchases: "5",
         waste: "2",
         recycle: "false",
