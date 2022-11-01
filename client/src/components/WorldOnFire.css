@@ -3,6 +3,7 @@ h2.burn{
 }
 
 main.burn{
-    background-image:url(https://media.tenor.com/Qy4dAOV73dcAAAAM/skeleto-skeleton.gif);
-    background-size:contain;
+    background-image:url(https://media.tenor.com/VbezPY1TRaMAAAAC/fire-flames.gif);
+    background-size:cover;
+    background-repeat: no-repeat;
 }
