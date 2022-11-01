@@ -9,6 +9,7 @@ import ErrorPage from '../components/ErrorPage';
 import { deleteFootprint, getFootprints } from '../components/FootprintsService';
 import UpdateFootprint from '../components/UpdateFootprint';
 import TranquilityPage from '../components/TranquilityPage';
+import WorldOnFire from '../components/WorldOnFire';
 
 
 
@@ -53,6 +54,7 @@ const MainContainer = () => {
                         <Route exact path="/usercomparisons" element={<UserComparisons footprints={footprints} deleteUser={deleteUser} />} />
                         <Route exact path="/hints" element={<HintsPage />} />
                         <Route exact path="/tranquility" element={<TranquilityPage />} />
+                        <Route exact path="/worldonfire" element={<WorldOnFire />} /> 
                         <Route path="*" element={<ErrorPage />} />
                         <Route exact path='/updatefootprint/:id' element={<UpdateFootprint footprints={footprints} updateFootprint={updateFootprint} deleteUser={deleteUser}/>} />
                     </Routes>

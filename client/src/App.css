@@ -1,7 +1,7 @@
 body{
   background-image:url(https://media2.giphy.com/media/7LsYKNn60KhUs/giphy.gif?cid=ecf05e474dfo7axoa1ximzaufphgjei79cm022njdzdyop3w&rid=giphy.gif&ct=g);
-    background-size:cover;
-    background-repeat: no-repeat;
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 
 .App {
