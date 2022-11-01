@@ -28,19 +28,19 @@ const Footprint = ({footprint, deleteUser}) => {
     let transport_score = 0;
 
     switch(footprint.household){
-        case '1' : household_score = 14
+        case 'Live Alone' : household_score = 14
         break;
-        case '2' : household_score = 12
+        case '2 People' : household_score = 12
         break;
-        case '3' : household_score = 10
+        case '3 People' : household_score = 10
         break;
-        case '4' : household_score = 8
+        case '4 People' : household_score = 8
         break; 
-        case '5' : household_score = 6
+        case '5 People' : household_score = 6
         break;
-        case '6' : household_score = 4
+        case '6 People' : household_score = 4
         break;
-        case '7' : household_score = 2
+        case '7+ People' : household_score = 2
         break;
         default:
     }
@@ -68,37 +68,37 @@ const Footprint = ({footprint, deleteUser}) => {
         default:
     }
     switch(footprint.water){
-        case '1' : water_score = 1
+        case '1-3 times a week' : water_score = 1
         break;
-        case '2' : water_score = 2
+        case '4-9 times a week' : water_score = 2
         break;
-        case '3' : water_score = 3
+        case 'Over 9 times a week' : water_score = 3
         break;
         default:
     }
     switch(footprint.purchases){
-        case '1' : purchases_score = 2
+        case 'Almost never' : purchases_score = 2
         break;
-        case '2' : purchases_score = 4
+        case 'Less than 3' : purchases_score = 4
         break;
-        case '3' : purchases_score = 6
+        case 'Between 3 and 5' : purchases_score = 6
         break;
-        case '4' : purchases_score = 8
+        case 'Between 5 and 7' : purchases_score = 8
         break; 
-        case '5' : purchases_score = 10
+        case '7+ times' : purchases_score = 10
         break;
         default:
     }
     switch(footprint.waste){
-        case '1' : waste_score = 5
+        case 'Half or less' : waste_score = 5
         break;
-        case '2' : waste_score = 20
+        case '1 Bag' : waste_score = 20
         break;
-        case '3' : waste_score = 30
+        case '2 Bags' : waste_score = 30
         break;
-        case '4' : waste_score = 40
+        case '3 Bags"' : waste_score = 40
         break; 
-        case '5' : waste_score = 50
+        case '4+ Bags' : waste_score = 50
         break;
         default:
     }
@@ -113,9 +113,9 @@ const Footprint = ({footprint, deleteUser}) => {
         break; 
         default:
     }switch(footprint.recycle){
-        case "false" : recycle_score = 24
+        case "No" : recycle_score = 24
         break;
-        case "true" : recycle_score = 0
+        case "Yes" : recycle_score = 0
         break;
         default:
     }

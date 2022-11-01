@@ -46,7 +46,7 @@ const baroptions = {
             borderWidth: 0,
             dataLabels: {
                 enabled: true,
-                format: '{point.y}'
+                format: '{point.state}'
             }
         }
     },
@@ -65,24 +65,28 @@ const baroptions = {
                     name: "HouseHold Size",
                     y: individual_scores[0],
                     info: "CHANGE ME",
+                    state: footprint.household,
                     drilldown: null
                 },
                 {
                     name: "House Size",
                     y: individual_scores[1],
                     info: "CHANGE ME",
+                    state: footprint.house_size,
                     drilldown: null
                 },
                 {
                     name: "Food",
                     y: individual_scores[2],
                     info: "CHANGE ME",
+                    state: footprint.food,
                     drilldown: "Firefox"
                 },
                 {
                     name: "Water",
                     y: individual_scores[3],
                     info: "CHANGE ME",
+                    state: footprint.water,
                     drilldown: ""
 
                 },
@@ -90,18 +94,21 @@ const baroptions = {
                     name: "Purchases",
                     y: individual_scores[4],
                     info: "CHANGE ME",
+                    state: footprint.purchases,
                     drilldown: "Opera"
                 },
                 {
                     name: "Waste",
                     y: individual_scores[5],
                     info: "CHANGE ME",
+                    state: footprint.waste,
                     drilldown: "Internet Explorer"
                 },
                 {
                     name: "Recycle",
                     y: individual_scores[6],
                     info: "CHANGE ME",
+                    state: footprint.recycle,
                     drilldown: null
                     
                 },
@@ -109,6 +116,7 @@ const baroptions = {
                     name: "Transport",
                     y: individual_scores[7],
                     info: "CHANGE ME",
+                    state: footprint.transport,
                     drilldown: null
                     
                 }

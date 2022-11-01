@@ -4,24 +4,24 @@ db.dropDatabase();
 db.footprints.insertMany([
     {
         username: "Greta",
-        household: "3",
+        household: "3 People",
         house_size: "Medium",
         food: "Meat Daily",
-        water: "3",
-        purchases: "2",
-        waste: "1",
-        recycle: "true",
+        water: "Over 9 times a week",
+        purchases: "Less than 3",
+        waste: "Half or less",
+        recycle: "Yes",
         transport: "Bus"
     },
     {
         username: "Bono",
-        household: "5",
+        household: "5 People",
         house_size: "Large",
         food: "Vegan",
-        water: "3",
-        purchases: "5",
-        waste: "2",
-        recycle: "false",
+        water: "4-9 times a week",
+        purchases: "7+ times",
+        waste: "1 Bag",
+        recycle: "No",
         transport: "Car"
     },
 
