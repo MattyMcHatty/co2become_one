@@ -62,7 +62,7 @@ const baroptions = {
             colorByPoint: true,
             data: [
                 {
-                    name: "HouseHold size",
+                    name: "HouseHold Size",
                     y: individual_scores[0],
                     drilldown: "Chrome"
                 },
