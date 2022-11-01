@@ -93,13 +93,13 @@ const Footprint = ({footprint, deleteUser}) => {
         default:
     }
     switch(footprint.transport){
-        case '1' : transport_score = 0
+        case 'Bike or Walk' : transport_score = 0
         break;
-        case '2' : transport_score = 4
+        case 'Train' : transport_score = 4
         break;
-        case '3' : transport_score = 6
+        case 'Bus' : transport_score = 6
         break;
-        case '4' : transport_score = 10
+        case 'Car' : transport_score = 10
         break; 
         default:
     }switch(footprint.recycle){
@@ -120,10 +120,10 @@ const Footprint = ({footprint, deleteUser}) => {
     const footprint_score = calculations[0]
     const individual_scores = calculations[1]
 
-    const handleClick = () => {
-        console.log("click");
-        return <Link to={`/updatefootprint/${footprint._id}`}/>
-    }
+    // const handleClick = () => {
+    //     console.log("click");
+    //     return <Link to={`/updatefootprint/${footprint._id}`}/>
+    // }
     return (
         <>
         <div className="user-card">
@@ -139,8 +139,8 @@ const Footprint = ({footprint, deleteUser}) => {
         <div>Carbon Footprint Score: {footprint_score}</div>
         <br></br>
         <FootprintGraph CalculateFinalScore={CalculateFinalScore} footprint={footprint} />
-        <Link to={`/updatefootprint/${footprint._id}`}>Update user</Link>
-        <button  onClick={handleClick}>Update User</button>
+        <Link to={`/updatefootprint/${footprint._id}`}><button>Update User</button></Link>
+        {/* <button>Update User</button> */}
         <button  onClick={()=>deleteUser(footprint._id)}>Delete User 🗑</button>
         </div>
         </>

@@ -37,3 +37,9 @@
     transform: rotate(360deg);
   }
 }
+.link-button{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+  
+}
