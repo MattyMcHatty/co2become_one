@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { putFootprint } from './FootprintsService'
-import { useParams } from 'react-router-dom'
+import { Link, useParams, useNavigate } from 'react-router-dom'
 
 
 
 const UpdateFootprint = ({footprints, updateFootprint}) => {
 
+    const navigate = useNavigate()
     const [updateData, setUpdateData] = useState([])
+    const [rerender, setRerender] = useState(false)
 
     const {id} =  useParams()
 
@@ -38,6 +40,8 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
         updateData._id = id;
         putFootprint(updateData)
         .then(updateFootprint())
+        setRerender(!rerender)
+        navigate('/usercomparisons')
     }
 
     return(
@@ -132,7 +136,9 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
                     <option value="false" >No</option>
                 </select>
             </div>
+            <div>
             <input type="submit" value="Update User Footprint" id="save" />
+            </div>
         </form>
     )
 }

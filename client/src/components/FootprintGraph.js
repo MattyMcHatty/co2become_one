@@ -1,7 +1,7 @@
 import React from 'react'
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
-import Footprint from './Footprint';
+
 
 
 
@@ -12,13 +12,13 @@ const FootprintGraph = ({footprint, CalculateFinalScore}) => {
     const footprint_score = calculations[0]
     const individual_scores = calculations[1]
 
-const options = {
+const baroptions = {
     chart: {
         type: 'column'
     },
     title: {
         align: 'left',
-        text: footprint.username
+        text: `Name: ${footprint.username} <br> Overall Co2 Score: ${footprint_score} Points`
     },
     // subtitle: {
     //     align: 'left',
@@ -62,7 +62,7 @@ const options = {
             colorByPoint: true,
             data: [
                 {
-                    name: "HouseHold",
+                    name: "HouseHold size",
                     y: individual_scores[0],
                     drilldown: "Chrome"
                 },
@@ -334,10 +334,13 @@ const options = {
         ]
     }
   }
+
+  
   
 return(
-<HighchartsReact highcharts={Highcharts} options={options} />
+<div className='barchart'><HighchartsReact highcharts={Highcharts} options={baroptions} /></div>
 )
 }
 export default FootprintGraph
 // constructorType={'stockChart'}
+{/* <div className='piechart'><HighchartsReact highcharts={Highcharts} options={pieoptions} /></div> */}

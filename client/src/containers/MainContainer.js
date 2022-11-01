@@ -23,13 +23,14 @@ const MainContainer = () => {
     }, [])
 
     const addFootprint = (footprint) => {
-        const temp = footprints.map(s => s);
-        temp.push(footprint);
-        setFootprints(temp);
+        return
+        // const temp = footprints.map(s => s);
+        // temp.push(footprint);
+        // setFootprints(temp);
     }
   
     const updateFootprint = () => {
-        getFootprints().then((allFootprints) => {setFootprints(allFootprints)});
+        // getFootprints().then((allFootprints) => {setFootprints(allFootprints)});
     }
 
 
