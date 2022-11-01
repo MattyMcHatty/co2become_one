@@ -203,7 +203,7 @@ const Title = styled.h2`
                 <label htmlFor="transport">What is your primary mode of transport?: </label>
                 <Select onChange={onChange} id="transport" name="transport" value={formData.transport} required>
                     <option value="" default >Please Select</option>
-                    <option value="Bike or Walk<">Bike or Walk</option>
+                    <option value="Bike or Walk">Bike or Walk</option>
                     <option value="Train">Train</option>
                     <option value="Bus">Bus</option>
                     <option value="Car">Car</option>
