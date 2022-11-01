@@ -46,8 +46,6 @@ const FootprintPieGraph = ({footprint, CalculateFinalScore}) => {
                 data: [{
                     name: 'HouseHold Size',
                     y: individual_scores[0],
-                    // sliced: true,
-                    // selected: true
                 }, {
                     name: "House Size",
                     y: individual_scores[1],

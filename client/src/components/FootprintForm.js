@@ -209,10 +209,6 @@ const Title = styled.h2`
                     <option value="Car">Car</option>
                 </Select>
             </Question>
-            {/* <Question className="form-wrap">
-                <label htmFor="recycle">Do you recycle?: </label>
-                <input type="checkbox" id="recycle" name="recycle" onClick={formData.recycle = true}></input>
-            </Question> */}
             <Question className="form-wrap">
                 <label htmlFor="recycle">Do you recycle?: </label>
                 <Select onChange={onChange} id="recycle" name="recycle" value={formData.recycle} required>

@@ -20,10 +20,6 @@ const baroptions = {
         align: 'left',
         text: `Name: ${footprint.username} <br> Overall Co2 Score: ${footprint_score} Points`
     },
-    // subtitle: {
-    //     align: 'left',
-    //     text: 'Click the columns to view versions. Source: <a href="http://statcounter.com" target="_blank">statcounter.com</a>'
-    // },
     accessibility: {
         announceNewData: {
             enabled: true

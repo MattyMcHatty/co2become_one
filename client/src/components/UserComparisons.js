@@ -4,14 +4,13 @@ import Footprint from './Footprint';
 
 const UserComparisons = ({footprints, deleteUser}) => {
 
-//    const history = useHistory()
-    // location.reload()
+
 
     const footprintsList = footprints.map((footprint) => {
         return <Footprint footprint={footprint} key={footprint._id} deleteUser={deleteUser}/>
         
     })
-    // history.go(0)
+
       
 
     return (

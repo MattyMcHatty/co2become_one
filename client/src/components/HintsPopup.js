@@ -2,7 +2,7 @@ import React from 'react'
 
 const HintsPopup = () => {
     return (
-        <div>HintsPopup</   div>
+        <div>HintsPopup</div>
     )     
 }
 

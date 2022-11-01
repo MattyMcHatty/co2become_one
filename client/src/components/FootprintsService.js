@@ -25,7 +25,6 @@ export const putFootprint = (payload) => {
     console.log(payload)
     const id = payload._id;
     const newPayload = {};
-    // newPayload['_id'] = payload[0]._id;
     newPayload['username'] = payload.username;
     newPayload['household'] = payload.household;
     newPayload['house_size'] = payload.house_size;
