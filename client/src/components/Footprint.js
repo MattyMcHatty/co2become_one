@@ -139,7 +139,7 @@ const Footprint = ({footprint, deleteUser}) => {
         <div>Carbon Footprint Score: {footprint_score}</div>
         <br></br>
         <FootprintGraph CalculateFinalScore={CalculateFinalScore} footprint={footprint} />
-        <Link to={`/updatefootprint/${footprint._id}`}><button>Update User</button></Link>
+        <Link to={`/updatefootprint/${footprint._id}`}> <button>Update User</button> </Link>
         {/* <button>Update User</button> */}
         <button  onClick={()=>deleteUser(footprint._id)}>Delete User 🗑</button>
         </div>

@@ -14,19 +14,17 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
     console.log(updateData);
 
     useEffect(() => {
-        if(id){
         setUpdateData({
-            username: footprint[0].username,
-            household: footprint[0].household,
-            house_size: footprint[0].house_size,
-            food: footprint[0].food,
-            water: footprint[0].water,
-            purchases: footprint[0].purchases,
-            waste: footprint[0].waste,
-            transport: footprint[0].transport,
-            recycle: footprint[0].recycle,
+            username: footprint.username,
+            household: footprint.household,
+            house_size: footprint.house_size,
+            food: footprint.food,
+            water: footprint.water,
+            purchases: footprint.purchases,
+            waste: footprint.waste,
+            transport: footprint.transport,
+            recycle: footprint.recycle,
               })
-            }
      },[])
 
     const onChange = (e) => {
@@ -35,9 +33,11 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
         newFormData[e.target.name] = e.target.value;
         setUpdateData(newFormData);
     }
-    const onSubmit = () => {
+    const onSubmit = (e) => {
+        e.preventDefault()
+        updateData._id = id;
         putFootprint(updateData)
-        .then((data)=>{updateFootprint(data);})
+        .then(updateFootprint())
     }
 
     return(
@@ -45,7 +45,7 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
             <h2>Update User</h2>
             <div className="form-wrap">
                 <label htmlFor="username">Username: </label>
-                <input onChange={onChange} type="text" value={updateData.username}  required />
+                <input onChange={onChange} type="text" id="username" name="username"  value={updateData.username}  required />
             </div>
             <div className="form-wrap">
                 <label htmlFor="household">How many people live in your house?: </label>

@@ -21,18 +21,20 @@ export const deleteFootprint = (id) => {
 }
 
 export const putFootprint = (payload) => {
-    const id = payload[0]._id;
+    console.log("Fired")
+    console.log(payload)
+    const id = payload._id;
     const newPayload = {};
     // newPayload['_id'] = payload[0]._id;
-    newPayload['username'] = payload[0].username;
-    newPayload['household'] = payload[0].household;
-    newPayload['house_size'] = payload[0].house_size;
-    newPayload['food'] = payload[0].food;
-    newPayload['water'] = payload[0].water;
-    newPayload['purchases'] = payload[0].purchases;
-    newPayload['waste'] = payload[0].waste;
-    newPayload['recycle'] = payload[0].recycle;
-    newPayload['transport'] = payload[0].transport;
+    newPayload['username'] = payload.username;
+    newPayload['household'] = payload.household;
+    newPayload['house_size'] = payload.house_size;
+    newPayload['food'] = payload.food;
+    newPayload['water'] = payload.water;
+    newPayload['purchases'] = payload.purchases;
+    newPayload['waste'] = payload.waste;
+    newPayload['recycle'] = payload.recycle;
+    newPayload['transport'] = payload.transport;
 
     return fetch(baseURL + id, {
         method: 'PUT',

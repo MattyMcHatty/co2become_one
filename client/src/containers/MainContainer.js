@@ -24,11 +24,12 @@ const MainContainer = () => {
         temp.push(footprint);
         setFootprints(temp);
     }
-    // const updateFootprint = (footprint) => {
-    //     const temp = footprints.map(s => s);
-    //     temp.push(footprint);
-    //     setFootprints(temp);
-    // }
+  
+    const updateFootprint = () => {
+        getFootprints().then((allFootprints) => {setFootprints(allFootprints)});
+    }
+
+
     const deleteUser = (id) => {
           deleteFootprint(id).then(()=>{
           let temp = footprints.map(f=>f);
@@ -50,7 +51,7 @@ const MainContainer = () => {
                         <Route exact path="/usercomparisons" element={<UserComparisons footprints={footprints} deleteUser={deleteUser} />} />
                         <Route exact path="/hints" element={<HintsPage />} />
                         <Route path="*" element={<ErrorPage />} />
-                        <Route exact path='/updatefootprint/:id' element={<UpdateFootprint footprints={footprints} deleteUser={deleteUser}/>} />
+                        <Route exact path='/updatefootprint/:id' element={<UpdateFootprint footprints={footprints} updateFootprint={updateFootprint} deleteUser={deleteUser}/>} />
                     </Routes>
 
 
