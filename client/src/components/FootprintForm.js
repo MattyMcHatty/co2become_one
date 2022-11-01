@@ -78,34 +78,17 @@ const CalculateButton = styled.input`
 `
 
 const Title = styled.h2`
-    text-decoration: underline;
-    
+    text-decoration: underline;   
 `
 
-    // useEffect(() => {
-    //         if(id){
-    //             // console.log(footprint);
-    //             // console.log("here!");
-    //             setFormData({
-    //             _id: footprint[0]._id,
-    //             username: footprint[0].username,
-    //             household: footprint[0].household,
-    //             house_size: footprint[0].house_size,
-    //             food: footprint[0].food,
-    //             water: footprint[0].water,
-    //             purchases: footprint[0].purchases,
-    //             waste: footprint[0].waste,
-    //             recycle: footprint[0].recycle,
-    //             transport: footprint[0].transport,
-    //           })}
-    //  },[])
+
     const FootprintForm = ({addFootprint}) => {
       
     const navigate = useNavigate()
 
     const [formData, setFormData] = useState({
         username: "",
-        household: "",
+        household: "",                              // USE SEPARATE STATES
         house_size: "",
         food: "",
         water: "",

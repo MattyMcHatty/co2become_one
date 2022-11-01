@@ -1,20 +1,22 @@
 .App {
   text-align: center;
   background-color: #ffebcc;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
+} */
+/* 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -23,8 +25,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
+} */
+/* 
 .App-link {
   color: #61dafb;
 }
@@ -36,21 +38,28 @@
   to {
     transform: rotate(360deg);
   }
-}
-.link-button{
+} */
+/* .link-button{
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
   
+} */
+
+.list {
+  display: grid;
+  /* flex-wrap: wrap; *
 }
-
-.list{
-  display: flex;
-  flex-flow: row;
-  flex-wrap: nowrap;
-
+.highcharts-container{
+  display: inline-block;
+  /* max-width: 500px; */
 }
-
 .user-card{
-  max-width: 500px;
+  width: auto;
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  padding-top: 10px;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }

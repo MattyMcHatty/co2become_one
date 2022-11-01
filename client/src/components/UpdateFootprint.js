@@ -8,6 +8,7 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
 
     const navigate = useNavigate()
     const [updateData, setUpdateData] = useState([])
+    const [rerender, setRerender] = useState(false)
 
     const {id} =  useParams()
 
@@ -39,6 +40,7 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
         updateData._id = id;
         putFootprint(updateData)
         .then(updateFootprint())
+        setRerender(!rerender)
         navigate('/usercomparisons')
     }
 
