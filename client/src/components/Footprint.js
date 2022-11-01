@@ -5,6 +5,7 @@ import UpdateFootprint from './UpdateFootprint';
 import { Link } from 'react-router-dom';
 
 
+
 const Footprint = ({footprint, deleteUser}) => {
 
     const CalculateFinalScore =(footprint) =>{
@@ -126,8 +127,9 @@ const Footprint = ({footprint, deleteUser}) => {
     // }
     return (
         <>
+        <div className='container'>
         <div className="user-card">
-        <div>User: {footprint.username}</div>
+        {/* <div>User: {footprint.username}</div>
         <div>Household Members: {footprint.household}</div>
         <div>House Size: {footprint.house_size}</div>
         <div>Food Consumption: {footprint.food}</div>
@@ -136,12 +138,13 @@ const Footprint = ({footprint, deleteUser}) => {
         <div>Waste: {footprint.waste}</div>
         <div>Do You Recycle?: {footprint.recycle ? "Yes" : "No"}</div>
         <div>Transport: {footprint.transport}</div>
-        <div>Carbon Footprint Score: {footprint_score}</div>
+        <div>Carbon Footprint Score: {footprint_score}</div> */}
         <br></br>
         <FootprintGraph CalculateFinalScore={CalculateFinalScore} footprint={footprint} />
         <Link to={`/updatefootprint/${footprint._id}`}> <button>Update User</button> </Link>
         {/* <button>Update User</button> */}
         <button  onClick={()=>deleteUser(footprint._id)}>Delete User 🗑</button>
+        </div>
         </div>
         </>
     )
