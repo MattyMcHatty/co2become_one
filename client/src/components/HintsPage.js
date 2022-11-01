@@ -9,10 +9,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 const HintsPage = () => {
     return (
-        <div style={{ display: 'flow-root', width: 1000, padding: 50}}>
+        <div style={{ display: 'inline-block', width: 1000, padding: 50}}>
         <h4>CO2 Reducing Hints and Tips</h4>
         <Carousel>
-        <Carousel.Item interval={1000} >
+        <Carousel.Item interval={3000} >
         <img
             className="d-block w-100"
             src={"https://wallpapercrafter.com/th800/232791-dark-green-leaves-on-plants-outsidelost-in-the-lea.jpg"}
@@ -29,7 +29,7 @@ const HintsPage = () => {
             <h4>While you’re comparing airline prices, compare the company’s eco-credentials too. What you want is transparency about their emissions and initiatives designed to reduce their environmental impact.</h4>
             </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={3000}>
             <img
             className="d-block w-100"
             src={"https://wallpapercrafter.com/th800/232791-dark-green-leaves-on-plants-outsidelost-in-the-lea.jpg"}
@@ -64,7 +64,7 @@ const HintsPage = () => {
             Offsetting the amount which you are not able to avoid empowers you to take full responsibility for your carbon pollution, which is your contribution to climate change. In this context, COTAP offers a unique and meaningful solution in that we focus on certified forestry projects in least-developed regions that create life-changing income for the world’s poorest people.</h4>
         </Carousel.Caption>
     </Carousel.Item> */}
-    <Carousel.Item interval={1000}>
+    <Carousel.Item interval={3000}>
         <img
         className="d-block w-100"
         src={"https://wallpapercrafter.com/th800/232791-dark-green-leaves-on-plants-outsidelost-in-the-lea.jpg"}
