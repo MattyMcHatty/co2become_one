@@ -12,6 +12,7 @@ list-style-type: none;`
 const NavLinks = styled.li`
 font-size:1 rem;
 color: #00802b;
+text-shadow: none;
 a:visited {color: #00802b}
 a:hover {color: black}`
 
@@ -32,6 +33,9 @@ const NavBar = () => {
         </NavLinks>
         <NavLinks>
             <Link to="/hints">Hints</Link>
+        </NavLinks>
+        <NavLinks>
+            <Link to="/tranquility">Tranquility</Link>
         </NavLinks>
             
     </NavContainer>

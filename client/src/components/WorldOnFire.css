@@ -1,0 +1,10 @@
+h2.burn{
+    color:crimson;
+}
+
+main.burn{
+    background-image:url(https://media.tenor.com/VbezPY1TRaMAAAAC/fire-flames.gif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 3rem;
+}

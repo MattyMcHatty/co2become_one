@@ -14,6 +14,9 @@ const TeamMember = styled.li`
     border-radius: 8px;
     padding: 5px;
     font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #b3ffb3;
+    text-shadow: none;
 `
 
 const HomePage = () => {
@@ -23,6 +26,7 @@ const HomePage = () => {
         <main>Calculate your carbon footprint score today and check out our handy tips to figure out how 
             you can become one with mother nature.
         </main>
+        <br></br>
         <footer>
             <h3>Our Team</h3>
             <TeamList>
