@@ -43,3 +43,14 @@
     appearance: button;
   
 }
+
+.list{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+
+}
+
+.user-card{
+  max-width: 500px;
+}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { postFootprint } from './FootprintsService'
 import styled from 'styled-components'
+import { useNavigate } from 'react-router-dom'
 
 const Select = styled.select`
     position: relative;
@@ -100,6 +101,7 @@ const Title = styled.h2`
     //  },[])
     const FootprintForm = ({addFootprint}) => {
       
+    const navigate = useNavigate()
 
     const [formData, setFormData] = useState({
         username: "",
@@ -144,7 +146,7 @@ const Title = styled.h2`
         transport: ""
         });
         // }
-        
+        navigate('/usercomparisons')
     }
     return (
         <form onSubmit={onSubmit} id="footprint-form">
