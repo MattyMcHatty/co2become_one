@@ -15,15 +15,15 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
 
     useEffect(() => {
         setUpdateData({
-            username: footprint.username,
-            household: footprint.household,
-            house_size: footprint.house_size,
-            food: footprint.food,
-            water: footprint.water,
-            purchases: footprint.purchases,
-            waste: footprint.waste,
-            transport: footprint.transport,
-            recycle: footprint.recycle,
+            username: footprint[0].username,
+            household: footprint[0].household,
+            house_size: footprint[0].house_size,
+            food: footprint[0].food,
+            water: footprint[0].water,
+            purchases: footprint[0].purchases,
+            waste: footprint[0].waste,
+            transport: footprint[0].transport,
+            recycle: footprint[0].recycle,
               })
      },[])
 
