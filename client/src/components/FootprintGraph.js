@@ -358,5 +358,4 @@ return(
 )
 }
 export default FootprintGraph
-// constructorType={'stockChart'}
-{/* <div className='piechart'><HighchartsReact highcharts={Highcharts} options={pieoptions} /></div> */}
+

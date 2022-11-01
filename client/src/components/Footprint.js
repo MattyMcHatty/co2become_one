@@ -1,21 +1,12 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import FootprintGraph from './FootprintGraph';
 import FootprintPieGraph from './FootprintPieGraph';
-import { deleteFootprint, putFootprint} from './FootprintsService';
-import UpdateFootprint from './UpdateFootprint';
+
 import { Link } from 'react-router-dom';
 
 
 
 const Footprint = ({footprint, deleteUser}) => {
-
-    const refresh = () => {
-        window.location.reload(false)
-      }
-    // useEffect(() =>{
-    //     refresh()
-    // },0);
-
 
     const CalculateFinalScore =(footprint) =>{
     let household_score = 0;
@@ -126,14 +117,7 @@ const Footprint = ({footprint, deleteUser}) => {
 
     }
 
-    const calculations = CalculateFinalScore(footprint)
-    const footprint_score = calculations[0]
-    const individual_scores = calculations[1]
 
-    // const handleClick = () => {
-    //     console.log("click");
-    //     return <Link to={`/updatefootprint/${footprint._id}`}/>
-    // }
     return (
         <>
         <div className='container'>

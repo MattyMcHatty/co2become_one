@@ -33,7 +33,7 @@ const HintsPage = () => {
             <img
             className="d-block w-100"
             src={"https://wallpapercrafter.com/th800/232791-dark-green-leaves-on-plants-outsidelost-in-the-lea.jpg"}
-            alt="Image Two"
+            alt="Two"
             />
             <Carousel.Caption>
             <h3>Food</h3>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { putFootprint } from './FootprintsService'
-import { Link, useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 
 
@@ -110,6 +110,8 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
             transport: footprint[0].transport,
             recycle: footprint[0].recycle,
               })
+    // DO NOT DELETE NEXT LINE
+    // eslint-disable-next-line
      },[])
 
     const onChange = (e) => {

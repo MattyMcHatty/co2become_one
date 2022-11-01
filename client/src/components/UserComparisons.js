@@ -1,8 +1,5 @@
-import React , { useEffect } from 'react'
-import { render ,useHistory} from 'react-dom';
-import Footprint from './Footprint'
-import Highcharts from 'highcharts';
-import HighchartsReact from 'highcharts-react-official';
+import React from 'react'
+import Footprint from './Footprint';
 
 
 const UserComparisons = ({footprints, deleteUser}) => {

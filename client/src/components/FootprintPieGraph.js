@@ -6,7 +6,6 @@ import HighchartsReact from 'highcharts-react-official';
 const FootprintPieGraph = ({footprint, CalculateFinalScore}) => {
 
     const calculations = CalculateFinalScore(footprint)
-    const footprint_score = calculations[0]
     const individual_scores = calculations[1]
 
 
