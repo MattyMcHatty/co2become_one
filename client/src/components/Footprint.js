@@ -116,7 +116,7 @@ const Footprint = ({footprint, deleteUser}) => {
     const individual_scores = [household_score, house_size_score, food_score, water_score, purchases_score, waste_score, purchases_score, waste_score, transport_score, recycle_score]
     return [final_score, individual_scores]
 
-}
+    }
 
     const calculations = CalculateFinalScore(footprint)
     const footprint_score = calculations[0]
@@ -142,8 +142,8 @@ const Footprint = ({footprint, deleteUser}) => {
         <div>Carbon Footprint Score: {footprint_score}</div> */}
         <br></br>
         <div className='charts'>
-        <FootprintGraph CalculateFinalScore={CalculateFinalScore} footprint={footprint} />
-        <FootprintPieGraph CalculateFinalScore={CalculateFinalScore} footprint={footprint} /></div>
+        <FootprintGraph CalculateFinalScore={CalculateFinalScore} footprint={footprint} /></div>
+        {/* <FootprintPieGraph CalculateFinalScore={CalculateFinalScore} footprint={footprint} /></div> */}
         <Link to={`/updatefootprint/${footprint._id}`}> <button>Update User <i class="fa fa-edit"></i></button> </Link>
         {/* <button>Update User</button> */}
         <button  onClick={()=>deleteUser(footprint._id)}>Delete User 🗑</button>
@@ -151,7 +151,7 @@ const Footprint = ({footprint, deleteUser}) => {
         </div>
         </>
     )
-}
+};
 
 
 export default Footprint
