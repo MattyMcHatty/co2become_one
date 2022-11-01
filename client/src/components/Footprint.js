@@ -112,8 +112,8 @@ const Footprint = ({footprint, deleteUser}) => {
         default:
     }
 
-    const final_score = household_score + house_size_score + food_score + water_score + purchases_score + waste_score + purchases_score + waste_score + transport_score + recycle_score;
-    const individual_scores = [household_score, house_size_score, food_score, water_score, purchases_score, waste_score, purchases_score, waste_score, transport_score, recycle_score]
+    const final_score = household_score + house_size_score + food_score + water_score + purchases_score + waste_score + transport_score + recycle_score;
+    const individual_scores = [household_score, house_size_score, food_score, water_score, purchases_score, waste_score, recycle_score, transport_score]
     return [final_score, individual_scores]
 
     }
