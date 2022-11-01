@@ -12,7 +12,7 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
 
     const navigate = useNavigate()
     const [updateData, setUpdateData] = useState([])
-    const [rerender, setRerender] = useState(false)
+    // const [rerender, setRerender] = useState(false)
 
     const {id} =  useParams()
 
@@ -44,7 +44,7 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
         updateData._id = id;
         putFootprint(updateData)
         .then(updateFootprint())
-        setRerender(!rerender)
+        // setRerender(!rerender)
         navigate('/usercomparisons')
         refresh()
     }
@@ -60,13 +60,13 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
                 <label htmlFor="household">How many people live in your house?: </label>
                 <select onChange={onChange} id="household" name="household" value={updateData.household} required>
                     <option value="" default >Please Select</option>
-                    <option value="1">I Live alone</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 </option>
-                    <option value="6">6 </option>
-                    <option value="7">7 +</option>
+                    <option value="Live Alone">I Live alone</option>
+                    <option value="2 People">2</option>
+                    <option value="3 People">3</option>
+                    <option value="4 People">4</option>
+                    <option value="5 People">5 </option>
+                    <option value="6 People">6 </option>
+                    <option value="7+ People">7 +</option>
                 </select>
             </div>
             <div className="form-wrap">
@@ -90,34 +90,34 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
                 </select>
             </div>
             <div className="form-wrap">
-                <label htmlFor="water">How often do you use your washing machine?: </label>
+                <label htmlFor="water">How many times a week do you use your washing machine?: </label>
                 <select onChange={onChange} id="water" name="water" value={updateData.water} required>
                     <option value="" default >Please Select</option>
-                    <option value="1">1 to 3 times per week</option>
-                    <option value="2">4 to 9 times per week</option>
-                    <option value="3">9 + times per week</option>
+                    <option value="1-3">1 to 3 times per week</option>
+                    <option value="4-9">4 to 9 times per week</option>
+                    <option value="Over 9">9 + times per week</option>
                 </select>
             </div>
             <div className="form-wrap">
                 <label htmlFor="purchases">How often do you buy new furniture, electronics or other household gadgets?: </label>
                 <select onChange={onChange} id="purchases" name="purchases" value={updateData.purchases} required>
                     <option value="" default >Please Select</option>
-                    <option value="1">Almost never or only second hand</option>
-                    <option value="2">Less than 3 times</option>
-                    <option value="3">Between 3 and 5 times</option>
-                    <option value="4">Between 5 and 7 times</option>
-                    <option value="5">7+ times</option>
+                    <option value="Almost Never">Almost never or only second hand</option>
+                    <option value="Less than 3">Less than 3 times</option>
+                    <option value="Between 3 and 5">Between 3 and 5 times</option>
+                    <option value="Between 5 and 7">Between 5 and 7 times</option>
+                    <option value="7+ times">7+ times</option>
                 </select>
             </div>
             <div className="form-wrap">
                 <label htmlFor="waste">How many bags of rubbish do you fill per week?: </label>
                 <select onChange={onChange} id="waste" name="waste" value={updateData.waste} required>
                     <option value="" default >Please Select</option>
-                    <option value="1">Half or less</option>
-                    <option value="2">1</option>
-                    <option value="3">2</option>
-                    <option value="4">3</option>
-                    <option value="5">4</option>
+                    <option value="Half or less">Half or less</option>
+                    <option value="1 Bag">1</option>
+                    <option value="2 Bags">2</option>
+                    <option value="3 Bags">3</option>
+                    <option value="4+ Bags">4</option>
                 </select>
             </div>
             <div className="form-wrap">
@@ -137,8 +137,8 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
             <div className="form-wrap">
                 <label htmlFor="recycle">Do you recycle?: </label>
                 <select onChange={onChange} id="recycle" name="recycle" value={updateData.recycle} required>
-                    <option value="true" >Yes</option>
-                    <option value="false" >No</option>
+                    <option value="Yes" >Yes</option>
+                    <option value="No" >No</option>
                 </select>
             </div>
             <div>

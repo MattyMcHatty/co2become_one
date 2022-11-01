@@ -83,7 +83,7 @@ const baroptions = {
                     drilldown: "Firefox"
                 },
                 {
-                    name: "Water",
+                    name: "Water(Washing Machine)",
                     y: individual_scores[3],
                     info: "CHANGE ME",
                     state: footprint.water,

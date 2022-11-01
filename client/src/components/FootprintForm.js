@@ -169,12 +169,12 @@ const Title = styled.h2`
                 </Select>
             </Question>
             <Question className="form-wrap">
-                <label htmlFor="water">How often do you use your washing machine?: </label>
+                <label htmlFor="water">How many times a week do you use your washing machine?: </label>
                 <Select onChange={onChange} id="water" name="water" value={formData.water} required>
                     <option value="" default >Please Select</option>
-                    <option value="1-3 times a week">1 to 3 times per week</option>
-                    <option value="4-9 times a week">4 to 9 times per week</option>
-                    <option value="Over 9 times a week">9 + times per week</option>
+                    <option value="1-3">1 to 3 times per week</option>
+                    <option value="4-9">4 to 9 times per week</option>
+                    <option value="Over 9">9 + times per week</option>
                 </Select>
             </Question>
             <Question className="form-wrap">

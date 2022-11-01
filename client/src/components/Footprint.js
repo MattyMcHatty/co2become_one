@@ -68,11 +68,11 @@ const Footprint = ({footprint, deleteUser}) => {
         default:
     }
     switch(footprint.water){
-        case '1-3 times a week' : water_score = 1
+        case '1-3' : water_score = 1
         break;
-        case '4-9 times a week' : water_score = 2
+        case '4-9' : water_score = 2
         break;
-        case 'Over 9 times a week' : water_score = 3
+        case 'Over 9' : water_score = 3
         break;
         default:
     }
@@ -152,7 +152,7 @@ const Footprint = ({footprint, deleteUser}) => {
         <div className='charts'>
         <FootprintGraph CalculateFinalScore={CalculateFinalScore} footprint={footprint} />
         <FootprintPieGraph CalculateFinalScore={CalculateFinalScore} footprint={footprint} /></div>
-        <Link to={`/updatefootprint/${footprint._id}`}> <button>Update User <i class="fa fa-edit"></i></button> </Link>
+        <Link to={`/updatefootprint/${footprint._id}`}> <button>Update User <i className="fa fa-edit"></i></button> </Link>
         {/* <button>Update User</button> */}
         <button  onClick={()=>deleteUser(footprint._id)}>Delete User 🗑</button>
         </div>
