@@ -48,14 +48,21 @@
 
 .list {
   display: grid;
+
   /* flex-wrap: wrap; *
 }
 .highcharts-container{
   display: inline-block;
   /* max-width: 500px; */
 }
+.container{
+  /* display: flex; */
+
+}
+.charts{
+}
 .user-card{
-  width: auto;
+  /* width: auto; */
   border: 5px solid black;
   border-radius: 10px;
   padding: 5px;
