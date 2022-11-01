@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import FootprintGraph from './FootprintGraph';
 import FootprintPieGraph from './FootprintPieGraph';
 import { deleteFootprint, putFootprint} from './FootprintsService';
@@ -8,6 +8,14 @@ import { Link } from 'react-router-dom';
 
 
 const Footprint = ({footprint, deleteUser}) => {
+
+    const refresh = () => {
+        window.location.reload(false)
+      }
+    // useEffect(() =>{
+    //     refresh()
+    // },0);
+
 
     const CalculateFinalScore =(footprint) =>{
     let household_score = 0;

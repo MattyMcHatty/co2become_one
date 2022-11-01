@@ -84,6 +84,9 @@ const Title = styled.h2`
 
     const FootprintForm = ({addFootprint}) => {
       
+        const refresh = () => {
+            window.location.reload(false)
+          }
     const navigate = useNavigate()
 
     const [formData, setFormData] = useState({
@@ -107,13 +110,6 @@ const Title = styled.h2`
 
     const onSubmit = (e) =>{
         e.preventDefault();
-
-        // if (id){
-        //     putFootprint(formData)
-        //     // .then((data)=>{putFootprint(data)})
-        //     console.log(formData)
-
-        // } else {
         postFootprint(formData)
         .then((data)=>{addFootprint(data);})
         // Reset the form input values
@@ -130,6 +126,7 @@ const Title = styled.h2`
         });
         // }
         navigate('/usercomparisons')
+        refresh()
     }
     return (
         <form onSubmit={onSubmit} id="footprint-form">

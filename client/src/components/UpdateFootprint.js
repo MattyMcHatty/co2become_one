@@ -6,6 +6,10 @@ import { Link, useParams, useNavigate } from 'react-router-dom'
 
 const UpdateFootprint = ({footprints, updateFootprint}) => {
 
+    const refresh = () => {
+        window.location.reload(false)
+      }
+
     const navigate = useNavigate()
     const [updateData, setUpdateData] = useState([])
     const [rerender, setRerender] = useState(false)
@@ -42,6 +46,7 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
         .then(updateFootprint())
         setRerender(!rerender)
         navigate('/usercomparisons')
+        refresh()
     }
 
     return(

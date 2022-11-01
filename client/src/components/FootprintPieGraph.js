@@ -42,7 +42,7 @@ const FootprintPieGraph = ({footprint, CalculateFinalScore}) => {
                 }
             },
             series: [{
-                name: 'Brands',
+                name: "",
                 colorByPoint: true,
                 data: [{
                     name: 'HouseHold Size',

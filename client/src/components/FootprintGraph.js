@@ -46,61 +46,69 @@ const baroptions = {
             borderWidth: 0,
             dataLabels: {
                 enabled: true,
-                format: '{point.y:.1f}'
+                format: '{point.y}'
             }
         }
     },
 
     tooltip: {
         headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-        pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}</b> of total<br/>'
+        pointFormat:  '<span style="color:{point.color}">{point.name}</span>: <b>{point.info}</b><br/>'
     },
 
     series: [
         {
-            name: "Browsers",
+            name: "Carbon Score",
             colorByPoint: true,
             data: [
                 {
                     name: "HouseHold Size",
                     y: individual_scores[0],
-                    drilldown: "Chrome"
+                    info: "CHANGE ME",
+                    drilldown: null
                 },
                 {
                     name: "House Size",
                     y: individual_scores[1],
-                    drilldown: "Safari"
+                    info: "CHANGE ME",
+                    drilldown: null
                 },
                 {
                     name: "Food",
                     y: individual_scores[2],
+                    info: "CHANGE ME",
                     drilldown: "Firefox"
                 },
                 {
                     name: "Water",
                     y: individual_scores[3],
+                    info: "CHANGE ME",
                     drilldown: ""
 
                 },
                 {
                     name: "Purchases",
                     y: individual_scores[4],
+                    info: "CHANGE ME",
                     drilldown: "Opera"
                 },
                 {
                     name: "Waste",
                     y: individual_scores[5],
+                    info: "CHANGE ME",
                     drilldown: "Internet Explorer"
                 },
                 {
                     name: "Recycle",
                     y: individual_scores[6],
+                    info: "CHANGE ME",
                     drilldown: null
                     
                 },
                 {
                     name: "Transport",
                     y: individual_scores[7],
+                    info: "CHANGE ME",
                     drilldown: null
                     
                 }
