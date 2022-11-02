@@ -20,6 +20,7 @@ a:hover {color: black}
 
 const logo = require('../images/co2becomeone_logo.png')
 
+
 const NavBar = () => {
 
     return (
