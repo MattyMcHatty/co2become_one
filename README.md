@@ -1,5 +1,5 @@
 ![co2becomeone_logo](https://user-images.githubusercontent.com/110641702/199516388-010c7405-f579-47ce-a2d5-6061d3ed298f.png)
-# co2become_one
+# CO2become_one
 JS Project with Colin, Lucy and Matthew
 
 # Personal CO2 Footprint Checker
