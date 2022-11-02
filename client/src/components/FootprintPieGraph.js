@@ -23,7 +23,8 @@ const FootprintPieGraph = ({footprint, CalculateFinalScore}) => {
             accessibility: {
                 point: {
                     valueSuffix: '%'
-                }
+                },
+                 enabled: false
             },
             plotOptions: {
                 pie: {

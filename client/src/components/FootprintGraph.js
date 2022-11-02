@@ -33,9 +33,8 @@ const baroptions = {
         text: null
     },
     accessibility: {
-        announceNewData: {
-            enabled: true
-        }
+            enabled: false
+        
     },
     xAxis: {
         type: 'category'

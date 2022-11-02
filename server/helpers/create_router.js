@@ -52,11 +52,8 @@ const createRouter = function (collection) {
     })
 
     router.put('/:id', (req, res) => {
-        console.log("put is fired");
         const id = req.params.id;
-        console.log(id);
         const updatedData = req.body;
-        console.log(updatedData);
         collection
         .updateOne(
             { _id: ObjectID(id) },
@@ -64,7 +61,6 @@ const createRouter = function (collection) {
         )
         .then((result) => {
             res.json(result)
-            console.log(result);
         })
         .catch((err) => {
             console.error(err)
