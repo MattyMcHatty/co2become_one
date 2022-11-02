@@ -65,6 +65,6 @@ You'll need to create your own (simple) tested model to calculate this.
  npm start 
 
  # Server file
-
- *npm run seeds 
- *npm run server:dev
+  
+<li>run seeds 
+<li>run server:dev
