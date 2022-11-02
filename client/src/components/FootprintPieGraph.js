@@ -49,7 +49,7 @@ const FootprintPieGraph = ({footprint, CalculateFinalScore}) => {
                     name: "Food",
                     y: individual_scores[2],
                 }, {
-                    name: "Water(Washing Machine)",
+                    name: "Water(Washing Machine usage per week)",
                     y: individual_scores[3],
                 },  {
                     name: "Purchases",

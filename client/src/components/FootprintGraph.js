@@ -90,7 +90,7 @@ const baroptions = {
                     drilldown: "Firefox"
                 },
                 {
-                    name: "Water(Washing Machine)",
+                    name: "Water(Washing Machine usage per week)",
                     y: individual_scores[3],
                     info: "Using less water means fewer droughts and lusher, greener countryside",
                     state: footprint.water,
