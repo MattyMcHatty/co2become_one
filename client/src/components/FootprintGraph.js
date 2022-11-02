@@ -3,6 +3,8 @@ import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 
 
+const greenFoot = require('../images/green_footprint.png')
+const redFoot = require('../images/red_footprint.png')
 
 
 
@@ -12,13 +14,25 @@ const FootprintGraph = ({footprint, CalculateFinalScore}) => {
     const footprint_score = calculations[0]
     const individual_scores = calculations[1]
 
+    const footprintImage = () => {
+      if(footprint_score > 59){
+        return redFoot
+      }else{
+        return greenFoot
+      }
+    }
+    const footImage = footprintImage()
+
 const baroptions = {
+
+    // renderer.image('../images/green_footprint.png', 10 , 50, 100, 100).add(),
+
     chart: {
         type: 'column'
     },
     title: {
         align: 'left',
-        text: `Name: ${footprint.username} <br> Overall Co2 Score: ${footprint_score} Points`
+        // text: `Name: ${footprint.username} <br> Overall Co2 Score: ${footprint_score} Points <img src="../images/green_footprint.png" />`
     },
     accessibility: {
         announceNewData: {
@@ -350,7 +364,10 @@ const baroptions = {
   
   
 return(
+    <>
+    <div>{footprint.username}   |   Overall Co2 Score: {footprint_score} Points     <img height="50px" src={footImage}/> </div>
 <div className='barchart'><HighchartsReact highcharts={Highcharts} options={baroptions} /></div>
+</>
 )
 }
 export default FootprintGraph

@@ -12,10 +12,15 @@ body{
 }
 
 
-/* .list {
-  display: grid;
-} */
+.logo{
+  width: 700px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* background-color: white; */
 
+
+
+}
 
 
 .highcharts-container{
@@ -41,7 +46,11 @@ body{
   border: 5px solid black;
   border-radius: 10px;
   padding: 5px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   scroll-behavior: smooth;
   overflow-y: scroll;
+  background-color: white;
+  color: black;
+  text-shadow: none;
+  font-size: x-large;
 }

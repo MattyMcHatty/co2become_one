@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 const Footprint = ({footprint, deleteUser}) => {
 
     const CalculateFinalScore =(footprint) =>{
