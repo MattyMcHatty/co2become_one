@@ -29,21 +29,21 @@ You'll need to create your own (simple) tested model to calculate this.
 
 # Server
 
- npm init -y
- npm install express
- npm install react-router-dom
- npm install mongodb@3.5.7
- npm install --save-dev cors
- npm install --save-dev nodemon
+ <li>npm init -y
+ <li>npm install express
+ <li>npm install react-router-dom
+ <li>npm install mongodb@3.5.7
+ <li>npm install --save-dev cors
+ <li>npm install --save-dev nodemon
 
- npm install -D @testing-library/react@12.1.5
- npm install -D cypress
+ <li>npm install -D @testing-library/react@12.1.5
+ <li>npm install -D cypress
+  
+# In seeds folder
 
- In seeds folder
-
- "start": "node server.js". 
- "server:dev": "nodemon server.js"	
- "seeds": "mongosh < ./db/seeds.js"
+ <li>"start": "node server.js". 
+ <li>"server:dev": "nodemon server.js"	
+ <li>"seeds": "mongosh < ./db/seeds.js"
  npm install highchairs —save
 
 
@@ -57,7 +57,7 @@ You'll need to create your own (simple) tested model to calculate this.
 -----------------------------------------------------
 
  # To run 
- npm i , in client and server files 
+ npm i in client and server files 
 
  # Client file
  npm start 
