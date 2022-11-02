@@ -10,7 +10,7 @@ Your task is to build a personal CO2 footprint checker app that calculates a use
 
 A user should be able to:
 
-to submit values for various aspects of their lifestyle (e.g. diet, commute, 
+<li>submit values for various aspects of their lifestyle (e.g. diet, commute, 
 recycling and heating routine, holiday habits, etc) and view their CO2 footprint. 
 You'll need to create your own (simple) tested model to calculate this.
 to update the values to see the effect on their CO2 footprint.
