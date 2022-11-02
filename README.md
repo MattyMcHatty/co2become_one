@@ -1,5 +1,3 @@
-![Alt text](/images/co2becomeone_logo.png ?raw=true)
-
 # co2become_one
 JS Project with Colin, Lucy and Matthew
 
