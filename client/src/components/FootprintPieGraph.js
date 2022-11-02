@@ -18,7 +18,7 @@ const FootprintPieGraph = ({footprint, CalculateFinalScore}) => {
                 text: 'How much each category contributes to your carbon footprint'
             },
             tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                pointFormat: '{series.name}<b>Points towards total: {point.score}</b> <br> <b>Percentage of total: {point.percentage:.1f}%</b>'
             },
             accessibility: {
                 point: {
@@ -42,27 +42,42 @@ const FootprintPieGraph = ({footprint, CalculateFinalScore}) => {
                 data: [{
                     name: 'HouseHold Size',
                     y: individual_scores[0],
+                    score: individual_scores[0],
                 }, {
                     name: "House Size",
                     y: individual_scores[1],
+                    score: individual_scores[1],
+
                 }, {
                     name: "Food",
                     y: individual_scores[2],
+                    score: individual_scores[2],
+
                 }, {
                     name: "Water(Washing Machine usage per week)",
                     y: individual_scores[3],
+                    score: individual_scores[3],
+
                 },  {
                     name: "Purchases",
                     y: individual_scores[4],
+                    score: individual_scores[4],
+
                 }, {
                     name: "Waste",
                     y: individual_scores[5],
+                    score: individual_scores[5],
+
                 }, {
                     name: "Recycle",
                     y: individual_scores[6],
+                    score: individual_scores[6],
+
                 }, {
                     name: "Transport",
                     y: individual_scores[7],
+                    score: individual_scores[7],
+
                 }]
             }]
         };

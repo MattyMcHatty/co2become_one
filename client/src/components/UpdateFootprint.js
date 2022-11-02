@@ -79,8 +79,7 @@ const CalculateButton = styled.input`
 `
 
 const Title = styled.h2`
-    text-decoration: underline;   
-`
+    text-decoration: underline;`
 
 const UpdateFootprint = ({footprints, updateFootprint}) => {
 
