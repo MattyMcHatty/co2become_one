@@ -68,34 +68,34 @@ const baroptions = {
 
     series: [
         {
-            name: "Carbon Score",
+            name: "",
             colorByPoint: true,
             data: [
                 {
                     name: "HouseHold Size",
                     y: individual_scores[0],
-                    info: "CHANGE ME",
+                    info: "Sharing your home with more people ensures your carbon footprint remains low as you each share utilities",
                     state: footprint.household,
                     drilldown: null
                 },
                 {
                     name: "House Size",
                     y: individual_scores[1],
-                    info: "CHANGE ME",
+                    info: "Smaller homes with less empty space are easier to heat and are therefore better for the environment.",
                     state: footprint.house_size,
                     drilldown: null
                 },
                 {
                     name: "Food",
                     y: individual_scores[2],
-                    info: "CHANGE ME",
+                    info: "More energy is required to raise cattle and eat meat than to simply eat vegetables right at the source",
                     state: footprint.food,
                     drilldown: "Firefox"
                 },
                 {
                     name: "Water(Washing Machine)",
                     y: individual_scores[3],
-                    info: "CHANGE ME",
+                    info: "Using less water means fewer droughts and lusher, greener countryside",
                     state: footprint.water,
                     drilldown: ""
 
@@ -103,21 +103,21 @@ const baroptions = {
                 {
                     name: "Purchases",
                     y: individual_scores[4],
-                    info: "CHANGE ME",
+                    info: "Disposing of older gadgets and white goods is difficult and bad for the environment",
                     state: footprint.purchases,
                     drilldown: "Opera"
                 },
                 {
                     name: "Waste",
                     y: individual_scores[5],
-                    info: "CHANGE ME",
+                    info: "Choosing to recycle rather than fill the waste bin means fewer non-degradable materials end up in the landfill",
                     state: footprint.waste,
                     drilldown: "Internet Explorer"
                 },
                 {
                     name: "Recycle",
                     y: individual_scores[6],
-                    info: "CHANGE ME",
+                    info: "Recycled materials can be use for a multitude of things, including building materials",
                     state: footprint.recycle,
                     drilldown: null
                     
@@ -125,7 +125,7 @@ const baroptions = {
                 {
                     name: "Transport",
                     y: individual_scores[7],
-                    info: "CHANGE ME",
+                    info: "Cycling to work means fewer harmful exhaust fumes filling our precious air and it’s good exercise too",
                     state: footprint.transport,
                     drilldown: null
                     
