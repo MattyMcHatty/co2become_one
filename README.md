@@ -44,15 +44,16 @@ You'll need to create your own (simple) tested model to calculate this.
  <li>"start": "node server.js". 
  <li>"server:dev": "nodemon server.js"	
  <li>"seeds": "mongosh < ./db/seeds.js"
- npm install highchairs —save
 
 
- Client
+ # Client
 
- npm install react-bootstrap 
- npm install bootstrap 
- npm install styled-components
- npm install react-router-dom
+ <li>npm install react-bootstrap 
+ <li>npm install bootstrap 
+ <li>npm install styled-components
+ <li>npm install react-router-dom
+ <li>npm install highcharts —save
+  
 
 -----------------------------------------------------
 
