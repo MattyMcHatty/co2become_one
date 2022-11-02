@@ -65,7 +65,7 @@ const baroptions = {
 
     series: [
         {
-            name: null,
+            name: "",
             colorByPoint: true,
             data: [
                 {
