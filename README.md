@@ -56,13 +56,13 @@ JS Project with Colin, Lucy and Matthew
 
 -----------------------------------------------------
 
- To run 
+ # To run 
  npm i , in client and server files 
 
- #client file
+ # Client file
  npm start 
 
- #server file
+ # Server file
 
  npm run seeds 
  npm run server:dev
