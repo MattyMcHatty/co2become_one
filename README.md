@@ -33,41 +33,41 @@ JS Project with Colin, Lucy and Matthew
 # Server
 
  npm init -y
-# npm install express
-# npm install react-router-dom
-# npm install mongodb@3.5.7
-# npm install --save-dev cors
-# npm install --save-dev nodemon
+ npm install express
+ npm install react-router-dom
+ npm install mongodb@3.5.7
+ npm install --save-dev cors
+ npm install --save-dev nodemon
 
-# npm install -D @testing-library/react@12.1.5
-# npm install -D cypress
+ npm install -D @testing-library/react@12.1.5
+ npm install -D cypress
 
-# In seeds folder
+ In seeds folder
 
-# "start": "node server.js". 
-# "server:dev": "nodemon server.js"	
-# "seeds": "mongosh < ./db/seeds.js"
-# npm install highchairs —save
+ "start": "node server.js". 
+ "server:dev": "nodemon server.js"	
+ "seeds": "mongosh < ./db/seeds.js"
+ npm install highchairs —save
 
 
-# Client
+ Client
 
-# npm install react-bootstrap 
-# npm install bootstrap 
-# npm install styled-components
-# npm install react-router-dom
+ npm install react-bootstrap 
+ npm install bootstrap 
+ npm install styled-components
+ npm install react-router-dom
 
 -----------------------------------------------------
 
-# To run 
+ To run 
 
-# npm i , in client and server files 
+ npm i , in client and server files 
 
-# client file
+ client file
 
-# npm start 
+ npm start 
 
-# server file
+ server file
 
-# npm run seeds 
-# npm run server:dev
+ npm run seeds 
+ npm run server:dev
