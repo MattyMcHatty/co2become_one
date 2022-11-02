@@ -16,7 +16,7 @@ const HintsPage = () => {
         <img
             className="d-block w-100"
             src={"https://wallpapercrafter.com/th800/232791-dark-green-leaves-on-plants-outsidelost-in-the-lea.jpg"}
-            alt="grass"
+            alt="One"
             />
         <Carousel.Caption>
             <h3>Air Travel</h3>
@@ -49,31 +49,16 @@ const HintsPage = () => {
             <h5><p>Think about your week ahead. Who’s in, whose out? Sense check your meal plan and adjust if plans have changed. </p></h5>
             </Carousel.Caption>
         </Carousel.Item>
-        {/* <Carousel.Item interval={1000}>
-        <img
-        className="d-block w-100"
-        src={"https://wallpapercrafter.com/th800/232791-dark-green-leaves-on-plants-outsidelost-in-the-lea.jpg"}
-        alt="First slide"
-        />
-        <Carousel.Caption>
-        <h3>Why it Matters</h3>
-            <br></br>
-        <h4>Offsetting your unavoidable CO2 emissions is a practical and immediate way to take ownership of your personal contribution to climate change. With COTAP, you’re addressing global economic inequality too. Offsetting also reveals both the need for cleaner energy sources and opportunities for reducing your carbon footprint.</h4>
-            <br></br>
-        <h4>Carbon offsetting should not be done in place of taking steps to reduce one’s carbon footprint. Carbon offsetting and carbon footprint reduction should be done in tandem. Measuring your carbon footprint not only reveals where you’re currently at, but also helps to identify areas for improvement and track your progress.
-            Offsetting the amount which you are not able to avoid empowers you to take full responsibility for your carbon pollution, which is your contribution to climate change. In this context, COTAP offers a unique and meaningful solution in that we focus on certified forestry projects in least-developed regions that create life-changing income for the world’s poorest people.</h4>
-        </Carousel.Caption>
-    </Carousel.Item> */}
     <Carousel.Item interval={3000}>
         <img
         className="d-block w-100"
         src={"https://wallpapercrafter.com/th800/232791-dark-green-leaves-on-plants-outsidelost-in-the-lea.jpg"}
-        alt="First slide"
+        alt="Three"
         />
         <Carousel.Caption>
         <h3>Car Travel </h3>
         <br></br>
-        <h4>  Tire inflation and other tuning :Properly inflated tires improves your milage by up to 3%.
+        <h4> Properly inflated tires improves your milage by up to 3%.
             It also helps to use the correct grade of motor oil, and to keep 
             your engine tuned, because some maintenance fixes, like fixing faulty
             oxygen sensors, can increase fuel efficiency by up to 40%.</h4>
