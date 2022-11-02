@@ -6,9 +6,9 @@ JS Project with Colin, Lucy and Matthew
 #You have been approached by a lifestyle consultancy company dealing with environmental sustainability. 
 #Your task is to build a personal CO2 footprint checker app that calculates a user's CO2 footprint based on their lifestyle.
 
-#MVP
+# MVP
 
-#A user should be able to:
+A user should be able to:
 
 #to submit values for various aspects of their lifestyle (e.g. diet, commute, 
 #recycling and heating routine, holiday habits, etc) and view their CO2 footprint. 
@@ -16,7 +16,7 @@ JS Project with Colin, Lucy and Matthew
 #to update the values to see the effect on their CO2 footprint.
 #view the CO2 footprint result in a visually interesting way.
 
-#Extensions
+# Extensions
 
 #A page that shows a world with and without responsible carbon footprint management.
 #Multiple ways to display the data
