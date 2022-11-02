@@ -1,9 +1,6 @@
 # co2become_one
 JS Project with Colin, Lucy and Matthew
 
-# co2become_one
-JS Project with Colin, Lucy and Matthew
-
 #Personal CO2 Footprint Checker
 
 #You have been approached by a lifestyle consultancy company dealing with environmental sustainability. 
@@ -60,14 +57,12 @@ JS Project with Colin, Lucy and Matthew
 -----------------------------------------------------
 
  To run 
-
  npm i , in client and server files 
 
- client file
-
+ #client file
  npm start 
 
- server file
+ #server file
 
  npm run seeds 
  npm run server:dev
