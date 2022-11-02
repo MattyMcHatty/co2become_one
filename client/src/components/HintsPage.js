@@ -2,11 +2,6 @@ import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css';
 
-
-
-
-
-
 const HintsPage = () => {
     return (
         <div style={{ display: 'inline-block', width: 1000, padding: 50}}>

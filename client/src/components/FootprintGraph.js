@@ -25,14 +25,12 @@ const FootprintGraph = ({footprint, CalculateFinalScore}) => {
 
 const baroptions = {
 
-    // renderer.image('../images/green_footprint.png', 10 , 50, 100, 100).add(),
-
     chart: {
         type: 'column'
     },
     title: {
         align: 'left',
-        // text: `Name: ${footprint.username} <br> Overall Co2 Score: ${footprint_score} Points <img src="../images/green_footprint.png" />`
+        text: null
     },
     accessibility: {
         announceNewData: {
@@ -68,7 +66,7 @@ const baroptions = {
 
     series: [
         {
-            name: "",
+            name: null,
             colorByPoint: true,
             data: [
                 {
@@ -361,14 +359,13 @@ const baroptions = {
     }
   }
 
-  
-  
+   
 return(
     <>
-    <div>{footprint.username}   |   Overall Co2 Score: {footprint_score} Points     <img height="50px" src={footImage}/> </div>
-<div className='barchart'><HighchartsReact highcharts={Highcharts} options={baroptions} /></div>
-</>
-)
+        <div>{footprint.username}   |   Overall Co2 Score: {footprint_score} Points <img height="50px" alt="" src={footImage}/> </div>
+        <div className='barchart'><HighchartsReact highcharts={Highcharts} options={baroptions} /></div>
+    </>
+    )
 }
 export default FootprintGraph
 

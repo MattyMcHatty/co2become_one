@@ -21,8 +21,6 @@ export const deleteFootprint = (id) => {
 }
 
 export const putFootprint = (payload) => {
-    console.log("Fired")
-    console.log(payload)
     const id = payload._id;
     const newPayload = {};
     newPayload['username'] = payload.username;

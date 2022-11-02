@@ -82,21 +82,17 @@ const Title = styled.h2`
     text-decoration: underline;   
 `
 
-
 const UpdateFootprint = ({footprints, updateFootprint}) => {
 
     const refresh = () => {
         window.location.reload(false)
-      }
-
+    }
     const navigate = useNavigate()
     const [updateData, setUpdateData] = useState([])
-    // const [rerender, setRerender] = useState(false)
-
     const {id} =  useParams()
 
     const footprint = footprints.filter(footprint => footprint._id === id)
-    console.log(updateData);
+
 
     useEffect(() => {
         setUpdateData({
@@ -115,7 +111,6 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
      },[])
 
     const onChange = (e) => {
-        // return
         const newFormData = Object.assign({}, updateData);
         newFormData[e.target.name] = e.target.value;
         setUpdateData(newFormData);
@@ -125,7 +120,6 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
         updateData._id = id;
         putFootprint(updateData)
         .then(updateFootprint())
-        // setRerender(!rerender)
         navigate('/usercomparisons')
         refresh()
     }
@@ -218,9 +212,7 @@ const UpdateFootprint = ({footprints, updateFootprint}) => {
                     <option value="No" >No</option>
                 </Select>
             </Question>
-
             <CalculateButton type="submit" value="Update User Footprint" id="save" />
-
         </form>
     )
 }

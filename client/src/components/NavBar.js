@@ -18,33 +18,29 @@ a:visited {color: #00802b}
 a:hover {color: black}
 `
 
-
 const logo = require('../images/co2becomeone_logo.png')
 
 const NavBar = () => {
 
-
     return (
         <NavContainer>
-     <span> <img src={logo} className="logo" alt='image'/> </span>
-
-        <NavLinks>
-            <Link to="/">Home</Link>
-        </NavLinks>
-        <NavLinks>
-            <Link to="/impact">Calculate Your Impact</Link>
-        </NavLinks>
-        <NavLinks>
-            <Link to="/usercomparisons">Compare Users</Link>
-        </NavLinks>
-        <NavLinks>
-            <Link to="/hints">Hints</Link>
-        </NavLinks>
-        <NavLinks>
-            <Link to="/tranquility">Tranquility</Link>
-        </NavLinks>
-            
-    </NavContainer>
+            <span> <img src={logo} className="logo" alt=''/> </span>
+            <NavLinks>
+                <Link to="/">Home</Link>
+            </NavLinks>
+            <NavLinks>
+                <Link to="/impact">Calculate Your Impact</Link>
+            </NavLinks>
+            <NavLinks>
+                <Link to="/usercomparisons">Compare Users</Link>
+            </NavLinks>
+            <NavLinks>
+                <Link to="/hints">Hints</Link>
+            </NavLinks>
+            <NavLinks>
+                <Link to="/tranquility">Tranquility</Link>
+            </NavLinks>        
+        </NavContainer>
     )
 }
 

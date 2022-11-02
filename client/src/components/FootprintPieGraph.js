@@ -2,15 +2,10 @@ import React from 'react'
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 
-
 const FootprintPieGraph = ({footprint, CalculateFinalScore}) => {
 
     const calculations = CalculateFinalScore(footprint)
     const individual_scores = calculations[1]
-
-
-
-
 
         const options = {
             chart: {
