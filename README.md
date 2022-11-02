@@ -32,7 +32,7 @@ JS Project with Colin, Lucy and Matthew
 
 # Server
 
-# npm init -y
+ npm init -y
 # npm install express
 # npm install react-router-dom
 # npm install mongodb@3.5.7
