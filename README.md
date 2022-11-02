@@ -13,15 +13,15 @@ A user should be able to:
 <li>submit values for various aspects of their lifestyle (e.g. diet, commute, 
 recycling and heating routine, holiday habits, etc) and view their CO2 footprint. 
 You'll need to create your own (simple) tested model to calculate this.
-to update the values to see the effect on their CO2 footprint.
-view the CO2 footprint result in a visually interesting way.
+<li>update the values to see the effect on their CO2 footprint.
+<li>view the CO2 footprint result in a visually interesting way.
 
 # Extensions
 
-A page that shows a world with and without responsible carbon footprint management.
-Multiple ways to display the data
-Can delete a user’s data.
-An interesting error page.
+<li>A page that shows a world with and without responsible carbon footprint management.
+<li>Multiple ways to display the data
+<li>Can delete a user’s data.
+<li>An interesting error page.
 
 ------------------------------------------------------------
 
