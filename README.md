@@ -1,4 +1,4 @@
-<img src='/images/co2becomeone_logo.png' className="logo" alt=''/>
+![Alt text](images/co2becomeone.png raw=true "Title")
 
 # co2become_one
 JS Project with Colin, Lucy and Matthew
